@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Us
-permalink: /about_us/
+permalink: /about/
 ---
 
 The Cornell University Autonomous Underwater Vehicle (CUAUV) team designs and
