@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contant Us
+title: Contact Us
 permalink: /contact
 order: 6
 ---
