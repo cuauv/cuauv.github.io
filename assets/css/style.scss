@@ -380,24 +380,24 @@ p.caption {
     opacity: .8;
 }
 
-#footer {
+.footer {
     color: #000;
     background-color: #f4f5f6;
     font-family: "Montserrat";
     padding: 20px;
     padding-bottom: 15px;
-}
 
-#footer a {
-    color: #000;
-      -webkit-transition: .3s all ease;
-    -moz-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    -ms-transition: .3s all ease;
-}
+    a {
+        color: #000;
+        -webkit-transition: .3s all ease;
+        -moz-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        -ms-transition: .3s all ease;
 
-#footer a:hover {
-    color: #D42C30;
+        :hover {
+            color: #D42C30;
+        }
+    }
 }
 
 .latest-news p {
