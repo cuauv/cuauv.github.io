@@ -1,7 +1,9 @@
 ---
+# The triple dashes signal Jekyll to build this file. More specifically, they
+# define (empty) Front Matter.
 ---
 
-@import "minima";
+@import "bootstrap";
 
 .contact {
     color: #FF0000;
