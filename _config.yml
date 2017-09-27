@@ -29,7 +29,7 @@ github_username:  cuauv
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-bootstrap-sass
+  # - jekyll-bootstrap-sass
   - jekyll-feed
 
 # Exclude from processing.
