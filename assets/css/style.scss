@@ -88,13 +88,12 @@ nav a, nav li{
 #hero {
     text-align: center;
     margin-top: -80px;
-    background: url("{{ "/assets/images/artemisappollo.png" | relative_url }}") no-repeat bottom center;
+    background: url("{{ "/assets/images/artemisapollo.png" | relative_url }}") no-repeat bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:auto 700px;
     min-height: 800px;
-
 }
 
 #hero h1 {

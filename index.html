@@ -1,0 +1,148 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+
+<div class="jumbotron" id = "hero">
+    <br>
+    <img id = "cuauvlogo" src = "{{ "/assets/images/newlogo.svg" | relative_url }}" alt="CUAUV">
+    <!--<p><b>Come to our Info Sessions</b></p>
+         <p>Thursday 9/1 from 5:00-6:00pm at Hollister 320</p>
+         <p>Tuesday 9/6 from 5:00-6:00 at Hollister 206</p>
+         <p>Friday 9/10 1:00-3:30 TBA </p>
+    <br>-->
+    <!--<p><b>Introducing</b></p>
+    <p>Artemis and Apollo!</p>-->
+    <!--<h1>Artemis & Apollo</h1>-->
+    <div id = "vehiclebuttondiv">
+        <!--<a href="https://apply.cuauv.org/2016/">
+             <button name="singlebutton" id = "vehiclebutton" class="btn btn-primary vehiclebutton" style="display:block">Apply Now</button>
+        </a>-->
+    </div>
+    <br>
+    <p><b><font color="red">ARTEMIS  &  APOLLO</font></b></p>
+    <!--<p>COMING TO ROBOSUB 2017</p>-->
+</div>
+
+<div class = "container">
+
+    <div class = "row">
+        <br><br>
+    </div>
+</div>
+
+<div class = "jumbotron" id = "updates">
+    <div class="container">
+        <!-- Add Alert Box for Special Announcements such as Recruiting, Open Pool Test Live Stream, etc -->
+        <!-- <button type = "button" class="close" data-dismiss="alert">X</button> -->
+        <!--	Missed the Open Pool Test? Rewatch the event in its entirety with live commentary and special guests!-->
+        <!-- </a> -->
+        <div class = "row">
+            <div class = "col-lg-6" id="latest-news">
+                <p class = "news_header"> Latest News </p>
+                <div class = "gradient_line"></div><br>
+                <!-- <?php -->
+                <!-- //Database call to select the 3 most recent articles and display their titles. Medoo Syntax for MySQL. -->
+                <!-- $posts = $db->select('posts', '*', array('ORDER' => 'TIMESTAMP DESC', 'LIMIT' => 3)); -->
+                <!-- for ($i = 0; $i < count($posts); $i++) { -->
+                <!-- $p = $posts[$i]; -->
+                <!-- echo '<div class="latest-news">'; -->
+                <!-- echo '<span> ' . date_format(date_create($p['timestamp']), "m/d/Y") . '</span>'; -->
+                <!-- echo '<p class="title"><a href = "news.php?article=' . $p['id'] . '" target=_"blank" style="font-size:22px">' . $p['title'] . '</a></p>'; -->
+                <!-- echo '<div class = "gradient_line"></div><br>'; -->
+                <!-- echo '</div>'; -->
+                <!-- } -->
+                <!-- echo '<a href="news.php"><button id="newsbutton" name="singlebutton" class="btn btn-primary pull-left">All News</button></a><br><br>'; -->
+                <!-- ?> -->
+            </div>
+            <div class = "col-lg-6">
+                <p class = "news_header"> Follow Us on Social Media </p>
+                <div class = "gradient_line"></div><br>
+                <div class = "row">
+                    <div class = "col-lg-6">
+                        <div id = "instafeed"></div><br>
+                    </div>
+                    <div class = "col-lg-6">
+                        <a class="twitter-timeline" href="https://twitter.com/CUAUV" data-widget-id="650475321880350720">Tweets by @CUAUV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ "/assets/js/instafeed.min.js" | relative_url }}"></script>
+
+<script type="text/javascript">
+ //Gets Instagram Feed
+ var userFeed = new Instafeed({
+     get: 'user',
+     userId: 2191060614,
+     accessToken: '2191060614.e899d1b.a5970a9d29894bb19ce10b7574fea07c',
+     sortBy: 'most-recent',
+     limit: 4,
+     template: {% raw %} '<a href="{{link}}" target="_blank"><img src="{{image}}" width=50%" /></a>', {% endraw %}
+     resolution: 'standard_resolution'
+ });
+ userFeed.run();
+</script>
+
+<script>
+ //Gets Twitter Feed
+ !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+     if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+         fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
+<script>
+
+ //Fade in Logo, Hero Title, and Call-to-Action button with a delay for each.
+ $(document).ready(function () {
+     $('#hero #cuauvlogo').fadeIn(2000);
+     $("#hero p").delay(800).fadeIn(2000);
+     $("#hero #vehiclebuttondiv").delay(1600).fadeIn(2000);
+ });
+
+</script>
+
+<script>
+ //displays uptime in each vehicle's alert div.
+ //uptime/uptime_thor.xml and /uptime/uptime_loki.xml should be updated through use of
+ //an auv-side uptime daemon. Contact software members for more info.
+
+ //Jeff Heidel 2013 (Updated by Andrew Halpern 2015)
+ $(document).ready(function () {
+     setInterval(function() { do_ajax("uptime/uptime_thor.xml", "#alertthor", "Thor") }, 5000);
+     setInterval(function() { do_ajax("uptime/uptime_loki.xml", "#alertloki", "Loki") }, 5000);
+     $.ajaxSetup({
+         cache: false
+     });
+ });
+
+ function do_ajax(uptime, div, vehiclename){
+     var displayedupdate = "";
+     jQuery.ajax({
+         type: "GET",
+         url: uptime,
+         dataType: "xml",
+         success: function(xml) {
+             jQuery(xml).find('uptime').each(function(){
+                 var hrs = jQuery(this).find('hours').text();
+                 var mins = jQuery(this).find('minutes').text();
+                 var secs = jQuery(this).find('seconds').text();
+                 var start = jQuery(this).find('start').text();
+                 var lastupdate = jQuery(this).find('update').text();
+
+                 if (!(lastupdate == displayedupdate)) {
+                     displayedupdate = lastupdate;
+                     jQuery(div).empty();
+                     jQuery('<div></div>').html('<big><b>' + vehiclename + '\'s in-water time:<br>'+hrs+' hour'+(hrs!=1?'s':'')+' '+mins+' minute'+(mins!=1?'s':'')+' '+secs+' second'+(secs!=1?'s':'')+'</b>' + ' ' + '</big><br><small>  Last update: '+ ' ' + lastupdate+'</small>').appendTo(div);
+                 }
+             });
+         }
+
+     });
+ }
+</script>
