@@ -722,7 +722,7 @@ map {
 
 #sponsors {
      text-align: center;
-    background: url("{{ "/assets/images/sponsor.png" | relative_url }}") no-repeat center center;
+    background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -775,7 +775,7 @@ map {
 #open_source {
      text-align: center;
      background-color: #fff;
-     /* background: url("{{ "/assets/images/sponsor.png" | relative_url }}") no-repeat center center; */
+     /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -792,14 +792,14 @@ map {
 #open_source_1 {
      text-align: center;
      background-color: #f9f9f9;
-     /* background: url("{{ "/assets/images/sponsor.png" | relative_url }}") no-repeat center center; */
+     /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
 }
 
 #open_source_1 h2 {
      text-align: left;
      font-size: 42px;
      color: #222;
-     /* background: url("{{ "/assets/images/sponsor.png" | relative_url }}") no-repeat center center; */
+     /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
 }
 
 #github {
