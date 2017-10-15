@@ -43,19 +43,18 @@ layout: default
             <div class = "col-lg-6" id="latest-news">
                 <p class = "news_header"> Latest News </p>
                 <div class = "gradient_line"></div><br>
-                <!-- <?php -->
-                <!-- //Database call to select the 3 most recent articles and display their titles. Medoo Syntax for MySQL. -->
-                <!-- $posts = $db->select('posts', '*', array('ORDER' => 'TIMESTAMP DESC', 'LIMIT' => 3)); -->
-                <!-- for ($i = 0; $i < count($posts); $i++) { -->
-                <!-- $p = $posts[$i]; -->
-                <!-- echo '<div class="latest-news">'; -->
-                <!-- echo '<span> ' . date_format(date_create($p['timestamp']), "m/d/Y") . '</span>'; -->
-                <!-- echo '<p class="title"><a href = "news.php?article=' . $p['id'] . '" target=_"blank" style="font-size:22px">' . $p['title'] . '</a></p>'; -->
-                <!-- echo '<div class = "gradient_line"></div><br>'; -->
-                <!-- echo '</div>'; -->
-                <!-- } -->
-                <!-- echo '<a href="news.php"><button id="newsbutton" name="singlebutton" class="btn btn-primary pull-left">All News</button></a><br><br>'; -->
-                <!-- ?> -->
+
+                {% for post in site.posts limit:3 %}
+                <div class="latest-news">
+                    <span>{{ post.date | date_to_string }}</span>
+                    <p class="title"><a href="{{ post.url | relative_url }}" target="_blank" style="font-size:22px">{{ post.title | escape }}</a></p>
+                    <div class="gradient_line"></div><br>
+                </div>
+                {% endfor %}
+
+                <a href="{{ "/news" | relative_url }}{{ "/news" | relative_url }}"><button id="newsbutton" name="singlebutton" class="btn btn-primary pull-left">All News</button></a>
+                <br>
+                <br>
             </div>
             <div class = "col-lg-6">
                 <p class = "news_header"> Follow Us on Social Media </p>
@@ -97,52 +96,10 @@ layout: default
 </script>
 
 <script>
-
  //Fade in Logo, Hero Title, and Call-to-Action button with a delay for each.
  $(document).ready(function () {
      $('#hero #cuauvlogo').fadeIn(2000);
      $("#hero p").delay(800).fadeIn(2000);
      $("#hero #vehiclebuttondiv").delay(1600).fadeIn(2000);
  });
-
-</script>
-
-<script>
- //displays uptime in each vehicle's alert div.
- //uptime/uptime_thor.xml and /uptime/uptime_loki.xml should be updated through use of
- //an auv-side uptime daemon. Contact software members for more info.
-
- //Jeff Heidel 2013 (Updated by Andrew Halpern 2015)
- $(document).ready(function () {
-     setInterval(function() { do_ajax("uptime/uptime_thor.xml", "#alertthor", "Thor") }, 5000);
-     setInterval(function() { do_ajax("uptime/uptime_loki.xml", "#alertloki", "Loki") }, 5000);
-     $.ajaxSetup({
-         cache: false
-     });
- });
-
- function do_ajax(uptime, div, vehiclename){
-     var displayedupdate = "";
-     jQuery.ajax({
-         type: "GET",
-         url: uptime,
-         dataType: "xml",
-         success: function(xml) {
-             jQuery(xml).find('uptime').each(function(){
-                 var hrs = jQuery(this).find('hours').text();
-                 var mins = jQuery(this).find('minutes').text();
-                 var secs = jQuery(this).find('seconds').text();
-                 var start = jQuery(this).find('start').text();
-                 var lastupdate = jQuery(this).find('update').text();
-
-                 if (!(lastupdate == displayedupdate)) {
-                     displayedupdate = lastupdate;
-                     jQuery(div).empty();
-                     jQuery('<div></div>').html('<big><b>' + vehiclename + '\'s in-water time:<br>'+hrs+' hour'+(hrs!=1?'s':'')+' '+mins+' minute'+(mins!=1?'s':'')+' '+secs+' second'+(secs!=1?'s':'')+'</b>' + ' ' + '</big><br><small>  Last update: '+ ' ' + lastupdate+'</small>').appendTo(div);
-                 }
-             });
-         }
-
-     });
- }
 </script>
