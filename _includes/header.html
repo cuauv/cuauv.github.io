@@ -16,6 +16,9 @@
 
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+                <li>
+                    <a href="{{ "/news" | relative_url }}">NEWS</a>
+                </li>
                 {% assign pages = site.pages | sort: "order" %}
                 {% for page in pages %}
                 {% if page.title and page.navbar != false %}
