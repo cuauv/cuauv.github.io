@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav">
                 {% assign pages = site.pages | sort: "order" %}
                 {% for page in pages %}
-                {% if page.title %}
+                {% if page.title and page.navbar != false %}
                 <li>
                     <a href="{{ page.url | relative_url }}">{{ page.title | upcase | escape }}</a>
                 </li>
