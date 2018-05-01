@@ -21,11 +21,11 @@
                 </li>
                 {% assign pages = site.pages | sort: "order" %}
                 {% for page in pages %}
-                {% if page.title and page.navbar != false %}
-                <li>
-                    <a href="{{ page.url | relative_url }}">{{ page.title | upcase | escape }}</a>
-                </li>
-                {% endif %}
+                  {% if page.title and page.navbar != false %}
+                  <li>
+                      <a href="{{ page.url | relative_url }}">{{ page.title | upcase | escape }}</a>
+                  </li>
+                  {% endif %}
                 {% endfor %}
             </ul>
         </div>
