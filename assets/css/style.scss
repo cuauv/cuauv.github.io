@@ -3,12 +3,6 @@
 # define (empty) Front Matter.
 ---
 
-/*!
- * Start Bootstrap - Logo Nav HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 html, body {
     padding:0;
     margin:0;
@@ -19,61 +13,12 @@ html, body {
       "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-#about2 h4 {
-  letter-spacing: 0;
-  margin-bottom: 0;
-  color: #B8B8B8;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-#about2 h3 {
-  font-family: "Merriweather", serif;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  color: #222;
-  font-weight: 400;
-}
-
-#about2 .red {
-  color: #E42129;
-}
-
-
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     font-family: "San Francisco", Helvetica, sans-serif;
     height:100%;
-    scrollbar-face-color: #D42C30;
-    scrollbar-shadow-color: #FFFFFF;
-    scrollbar-highlight-color: #FFFFFF;
-    scrollbar-3dlight-color: #FFFFFF;
-    scrollbar-darkshadow-color: #FFFFFF;
-    scrollbar-track-color: #FFFFFF;
-    scrollbar-arrow-color: #FFFFFF;
     color: #222;
 }
-
-/* Let's get this party started */
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background: rgba(213,45,48,1);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-}
-
 
 a, a:hover, a:visited, a:focus {
     color: #fff;
@@ -534,7 +479,6 @@ p.caption {
 /***About Us Styling ***/
 
 #about1 {
-    text-align: center;
     display: flex;
     align-items: center;
     margin-top: 0px;
@@ -542,47 +486,91 @@ p.caption {
 }
 
 #about1 h1 {
-/*    margin-top: -30px;*/
+  text-align: center;
+  font-weight: 500;
   color: #fff;
   margin: auto;
 }
 
-#about1 p{
-    font-size: 21px;
-    text-align: center;
-    background-color: #fff;
-    -moz-box-shadow: 2px 4px 6px rgba(255,255,255,.5);
-    -webkit-box-shadow: 2px 4px 6px rgba(255,255,255,.5);
-    box-shadow: 2px 4px 6px rgba(255,255,255,.5);
-}
-
 #about1 {
-    text-align: center;
     background: url("{{ "/assets/images/team.png" | relative_url }}") no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
     width: 100%;
-    height: 100vh;
-    margin-top: -20px;
-}
-
-#about1::after {
-  content: "";
-  opacity: 0.3;
-  background-color: black;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+    height: 50vh;
 }
 
 #about2 {
-    text-align: left;
+  padding-top: 8em;
+  padding-bottom: 8em;
 }
+
+#about2 h5 {
+  letter-spacing: 0;
+  margin-bottom: 2em;
+  color: #B8B8B8;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#about2 h4 {
+  font-family: "Merriweather", serif;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: #222;
+  font-weight: 400;
+}
+
+#about2 mark {
+  color: #E42129;
+  background-color: transparent;
+}
+
+#about3 h4 {
+  letter-spacing: 0;
+  margin-bottom: 1em;
+  color: #222;
+  font-weight: 500;
+}
+
+#about3 h5 {
+  font-family: "Merriweather", serif;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: #222;
+  font-weight: 300;
+}
+
+#about3 {
+  background-color: #fafafa;
+  padding-bottom: 8em;
+  padding-top: 8em;
+}
+
+#about4 h4 {
+  letter-spacing: 0;
+  margin-bottom: 1em;
+  color: #222;
+  font-weight: 500;
+}
+
+#about4 h5 {
+  font-family: "Merriweather", serif;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: #222;
+  font-weight: 300;
+}
+
+#about4 {
+  text-align: right;
+  padding-bottom: 8em;
+  padding-top: 8em;
+}
+
 
 #software{
     text-align: left;
