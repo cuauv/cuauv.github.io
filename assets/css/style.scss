@@ -10,8 +10,8 @@
 
 /***About Us Styling ***/
 
-.sample-small-container {
-  @include xy-grid-container(rem-calc(800 ), $grid-container-padding);
+.center-container {
+  @include xy-grid-container(rem-calc(800), $grid-container-padding);
 }
 
 #about1 {
@@ -58,6 +58,17 @@
   margin-bottom: 0;
   color: #222;
   font-weight: 400;
+}
+
+#about2 h3 {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: #222;
+  font-weight: 00;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em;
+  text-transform: uppercase;
 }
 
 #about2 mark {
