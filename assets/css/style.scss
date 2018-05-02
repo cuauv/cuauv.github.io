@@ -3,7 +3,8 @@
 # define (empty) Front Matter.
 ---
 
-@import 'foundation';
+@import 'foundation_settings';
+@import 'foundation/foundation';
 @include foundation-everything;
 
 
@@ -27,7 +28,7 @@ body {
 /***About Us Styling ***/
 
 .sample-small-container {
-  @include xy-grid-container(rem-calc(800), $grid-container-padding);
+  @include xy-grid-container(rem-calc(800 ), $grid-container-padding);
 }
 
 #about1 {
