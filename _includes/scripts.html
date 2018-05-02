@@ -1,0 +1,19 @@
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<script type="text/javascript" src="{{ "/assets/js/foundation.min.js" | relative_url }}"></script>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script type="text/javascript">
+    $(window).scroll(function() {
+        var theta = ($(window).scrollTop() / 200) % (2 * Math.PI);
+        $('#logo').css({ transform: 'rotate(' + theta + 'rad)' });
+    });
+</script>

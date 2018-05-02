@@ -26,10 +26,15 @@ github_username:  cuauv
 paginate: 10
 paginate_path: "/news/page:num/"
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Build settings
 markdown: kramdown
 plugins:
   # - jekyll-bootstrap-sass
+  - octopress-autoprefixer
   - jekyll-feed
 
 # Exclude from processing.

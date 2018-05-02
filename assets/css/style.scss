@@ -3,6 +3,10 @@
 # define (empty) Front Matter.
 ---
 
+@import 'foundation';
+@include foundation-everything;
+
+
 html, body {
     padding:0;
     margin:0;
@@ -18,462 +22,6 @@ body {
     font-family: "San Francisco", Helvetica, sans-serif;
     height:100%;
     color: #222;
-}
-
-a, a:hover, a:visited, a:focus {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav {
-	background-color: #000;
-    border-bottom:1px solid #fff;
-}
-
-nav a, nav li{
-    color: #f4f5f6;
-    font-family: "Montserrat", Helvetica, sans-serif;
-}
-
-.nav > li > a:hover, .nav > li > a:focus{
-    color: #D42C30;
-}
-
-.navbar-fixed-top .nav {
-    padding: 15px 0;
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
-}
-
-.icon-bar {
-    background-color: #fff;
-}
-
-@media(min-width:768px) {
-    body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        padding: 15px 0;
-    }
-}
-
-#hero {
-    text-align: center;
-    margin-top: -80px;
-    background: url("{{ "/assets/images/artemisapollo.png" | relative_url }}") no-repeat bottom center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:auto 700px;
-    min-height: 800px;
-}
-
-#hero h1 {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 950%;
-    margin-bottom: -10px;
-    padding-bottom: 0px;
-    display:none;
-}
-
-#cuauvlogo {
-    display:none;
-    width: 40%;
-    margin-top:1%;
-    max-width: 600px;
-}
-
-#hero p {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 270%;
-    display: none;
-}
-
-#vehiclebuttondiv {
-    display:none;
-}
-
-#vehiclebutton {
-    display: block;
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.alert-info {
-	background-color: #fff;
-	text-align:center;
-	font-size:22px;
-	border:none;
-    color: #222;
-    -webkit-transition: .3s all ease;
-    -moz-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    -ms-transition: .3s all ease;
-}
-
-.alert-info:hover {
-    background-color: #c11d21;
-    color: #fff;
-    /*text-decoration: underline;*/
-}
-
-#alert a {
-	font-family: "Source Sans Pro";
-}
-
-#alert a:hover {
-	text-decoration: underline;
-}
-
-#alertloki:hover{
-    background-color: #0b450a;
-}
-
-#alertthor, #alertloki {
-    margin-top: -3%;
-}
-
-#news {
-    text-align: left;
-    color: #222;
-    font-family: "Source Sans Pro";
-    background-color: #fff;
-    font-weight: 300;
-    padding-top: 0px;
-}
-
-#news a {
-    color: #D42C30;
-}
-
-#news a:hover {
-    font-weight:bold;
-}
-
-#newsbutton a {
-    color: #fff;
-}
-
-#latest-news a {
-    color: #fff;
-    -webkit-transition: .3s all ease;
-    -moz-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    -ms-transition: .3s all ease;
-}
-
-#latest-news a:hover {
-    font-weight: bolder;
-}
-
-#news h1 {
-    text-align: center;
-}
-
-#learn h2 {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 1200%;
-    margin-bottom: -10px;
-    padding-bottom: 0px;
-    font-size: 36px;
-    color: #fff;
-    margin-top: 500px;
-}
-
-#news h3 {
-    font-size: 18px;
-    text-align: left;
-}
-
-#news h4 {
-    font-size: 30px;
-    text-align: left;
-}
-
-#news h4 > #news a {
-    font-size: 30px !important;
-    text-align: left !important;
-    color: #000 !important;
-}
-
-#news p {
-    text-align: left;
-    font-size: 18px;
-}
-
-.jumbotron {
-    margin-bottom: -31px;
-}
-
-#electrical p, #software p, #business p, #mechanical p {
-    padding: 10px;
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, .6);
-}
-
-#electrical p, #software p {
-    border-left: 3px solid #d42c30;
-}
-
-#business p, #mechanical p {
-    border-right: 3px solid #d42c30;
-}
-
-#updates {
-    margin-bottom: 0px;
-}
-
-
-.gradient_line {
-    margin-left: auto;
-    margin-right: auto;
-    content: " ";
-    width: 100%;
-    height: 1px;
-    clear: both;
-    background: #D42C30;
-    background: -moz-linear-gradient(left, #D42C30, transparent);
-    background: -webkit-linear-gradient(left, #D42C30, transparent);
-    background: linear-gradient(to right, #D42C30, rgba(0, 0, 0, 0));
-    /*background: linear-gradient(to right, rgba(0, 0, 0, 0), #D42C30, rgba(0, 0, 0, 0)); get it glowing from center*/
-    /* width: 90%; */
-}
-
-#news img {
-    -webkit-transition: .3s all ease;
-    -moz-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    -ms-transition: .3s all ease;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-#news iframe {
-	width: 100% !important;
-	height: 400px !important;
-}
-
-#instafeed img {
-    border: 1px solid #000;
-}
-
-#news img:hover {
-    /*opacity: .9; */
-}
-
-#learn {
-    text-align: center;
-    background: url("{{ "/assets/images/team.png" | relative_url }}") no-repeat top center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:auto 100%;
-    min-height: 800px;
-}
-
-.btn-primary {
-    font-family: "Montserrat";
-    background-color: #000;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    border: 1px solid #D42C30;
-    -webkit-transition: .5s all ease;
-      -moz-transition: .5s all ease;
-      -o-transition: .5s all ease;
-      -ms-transition: .5s all ease;
-}
-
-.btn-primary:hover {
-    background-color: #D42C30;
-    color: #fff;
-}
-
-.btn-primary:active, .btn-primary:focus, .btn-primary:visited {
-    background-color: none;
-    border: none;
-
-}
-
-#newsbutton {
-    margin-top: 0px;
-    font-size: 16px;
-    text-align: left;
-    border: 1px solid #D42C30;
-    display:block;
-}
-
-#updates {
-    background-color: #000;
-    padding: 10px;
-    padding-top: 18px;
-    color: #fff;
-}
-
-p.news_header {
-    font-family: "Montserrat";
-    font-size: 24px;
-}
-
-p.title {
-    font-family: "Source Sans Pro";
-    font-size: 22px;
-}
-
-p.caption {
-    font-family: "Source Sans Pro";
-    font-size: 12px;
-}
-
-#updates span {
-    text-align: right;
-    float:right;
-    color: #d8d8d8;
-}
-
-#alert span {
-    text-align:left;
-    float:none;
-    color: #fff;
-}
-
-#news span {
-    text-align: right;
-    float:right;
-    color: #222;
-}
-
-#instafeed img:hover {
-    opacity: .8;
-}
-
-.footer {
-    color: #000;
-    background-color: #f4f5f6;
-    font-family: "Montserrat";
-    padding: 20px;
-    padding-bottom: 15px;
-
-    a {
-        color: #000;
-        -webkit-transition: .3s all ease;
-        -moz-transition: .3s all ease;
-        -o-transition: .3s all ease;
-        -ms-transition: .3s all ease;
-
-        :hover {
-            color: #D42C30;
-        }
-    }
-}
-
-.latest-news p {
-    font-weight: 300
-}
-
-/****** LOGIN MODAL ******/
-.loginmodal-container {
-  padding: 30px;
-  max-width: 350px;
-  width: 100% !important;
-  background-color: #F7F7F7;
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
-.loginmodal-container h1 {
-  text-align: center;
-  font-size: 1.8em;
-}
-
-.loginmodal-container input[type=submit] {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.loginmodal-container input[type=text], input[type=password] {
-  height: 44px;
-  font-size: 20px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-.loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.loginmodal {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
-}
-
-.loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #d42c30;
-  padding: 17px 0px;
-  font-size: 20px;
-  font-weight:bold;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
-}
-
-.loginmodal-submit:hover {
-  /* border: 1px solid #2f5bb7; */
-  border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-}
-
-.loginmodal-container a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s;
-}
-
-.login-help{
-  font-size: 12px;
 }
 
 /***About Us Styling ***/
@@ -620,384 +168,384 @@ p.caption {
     border: 2px solid #D42C30;
 }
 
-/***Vehicles Styling ***/
-
-#thor{
-    text-align: center;
-    /* background: url("{{ "/assets/images/argo3.png" | relative_url }}") no-repeat bottom center; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 800px;
-    background-color: #fff !important;
-    border-bottom: 2px solid #eee;
-}
-
-#thor h1 {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 660%;
-    margin-bottom: -10px;
-    padding-bottom: 0px;
-    margin-top: -30px;
-}
-
-#thor p {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 380%;
-}
-
-#vehicles p {
-    font-size: 16px;
-}
-
-#vehicles a {
-    text-align: center;
-    border: 0px;
-}
-
-.nav-justified {
-    border:none;
-}
-
-.visited {
-    border: 1px solid #888;
-}
-
-#vehicles img {
-	transition: all .2s ease-in-out;
-	filter: blur(0);
-}
-
-#vehicles img {
-    margin: auto;
-}
-
-#vehicles img:hover {
-	transform: scale(1.05);
-	filter: blur(0);
-}
-
-.badge {
-    background-color: #d42c27;
-    font-weight: normal;
-    font-size: 17px;
-}
-
-
-#sideview {
-    display: none;
-}
-
-#frontview {
-    display: none;
-}
-
-#loki_sideview {
-    display: none;
-}
-
-#loki_frontview {
-    display: none;
-}
-
-#trueview {
-    display: none;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: #D42C30;
-}
-
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: transparent;
-}
-
-a {
-    color: #222;
-    font-size: 16px;
-}
-
-.nav-pills>li{
-    background-color: #fff;
-    border: 2px solid #d8d8d8;
-    border-radius: 10px;
-}
-
-/* Blur + Gray Scale */
-map {
-    display: inline;
-}
-
-.hover10 figure img {
-	opacity: 0.7;
-    -webkit-filter: grayscale(5%) blur(0px);
-    filter: grayscale(5%) blur(0px);
-    /*-webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;*/
-
-}
-.hover10 figure:hover img {
-	opacity: 0.4;
-    -webkit-filter: grayscale(50%) blur(1px);
-    filter: grayscale(50%) blur(1px);
-    /*-webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;*/
-
-}
-/*@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }*/
-
-
-/* Sponsors Styling */
-
-#sponsors {
-     text-align: center;
-    background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 500px;
-    color: #fff;
-    margin-top: -20px;
-
-}
-
-#sponsors2 {
-    text-align: center;
-    background-color: #fff;
-}
-
-#sponsors2 img {
-    max-width: 100%;
-    max-height: 100px;
-     padding: 5px;
-}
-
-#sponsors2 a {
-    color: #222;
-}
-
-#sponsors2 .col-md-2, #sponsors2 .col-md-3, #sponsors2 .col-md-4 {
-    height: 100px;
-
-}
-
-#sponsors2 h3 {
-    font-size: 45px;
-}
-
-#sponsors2 img:hover {
-    opacity: .7;
-}
-
-#sponsorsbutton {
-    margin-top: 0px;
-    font-size: 16px;
-    text-align: left;
-    border: 1px solid #D42C30;
-    display:block;
-    margin:auto;
-    margin-bottom: 10px;
-}
-
-
-#open_source {
-     text-align: center;
-     background-color: #fff;
-     /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 300px;
-    margin-top: -20px;
-}
-
-#open_source p {
-    text-align: center;
-}
-
-
-#open_source_1 {
-     text-align: center;
-     background-color: #f9f9f9;
-     /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
-}
-
-#open_source_1 h2 {
-     text-align: left;
-     font-size: 42px;
-     color: #222;
-     /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
-}
-
-#github {
-    margin-bottom: 35px;
-}
-
-.open_source p {
-    text-align: left;
-    color: #222;
-    padding-bottom: 15px;
-    margin-bottom: 0px;
-    margin-top:0px;
-    font-weight: 400;
-}
-
-.open_source h1 {
-    text-align: left;
-}
-
-.open_source span {
-    float: right;
-    color: #222;
-    padding-top: 5px;
-}
-
-#wallpapers span {
-    float: left;
-    margin-right: 5px;
-    color: #fff;
-    margin-bottom: 5px;
-    margin-top:2px;
-}
-
-#wallpapers a {
-    color: #fff;
-}
-
-#wallpapers span:hover {
-    background-color: #222;
-}
-
-#github span {
-    float: none;
-    color:#fff;
-    padding-top:0px;
-}
-
-.open_source p:hover {
-    color: #D42C30;
-}
-
-.open_source iframe {
-    border: 1px solid transparent;
-}
-
-
-/* Contact */
-
-#contact {
-    text-align: left;
-    background-color: #fff;
-}
-
-a.accordion-toggle:hover, a.accordion-toggle:focus, .panel-body a {
-    color: #d42c30;
-}
-
-#contact h1 {
-    margin-top: 0px;
-}
-
-.nav-pills a {
-    color: #000;
-    text-align: left;
-}
-
-.nav-pills a:hover {
-    color: #D42C30;
-}
-
-@media (max-width:499px){
-
-	#hero {
-    text-align: center;
-    margin-top: -80px;
-    background: url("{{ "/assets/images/artemisapollo.png" | relative_url }}") no-repeat bottom center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:auto 500px;
-    min-height: 500px;
-
-
-}
-
-
-    #hero h1 {
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
-        font-weight: 300;
-        font-size: 750%;
-        margin-bottom: -10px;
-        padding-bottom: 0px;
-        margin-top: 50px;
-    }
-
-    #cuauvlogo {
-        width: 75%;
-        margin-top: 12%;
-    }
-
-    #hero p {
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
-        font-weight: 300;
-        font-size: 220%;
-    }
-
-
-#artemis h1 {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 550%;
-    margin-bottom: -10px;
-    padding-bottom: 0px;
-     margin-top: -25px;
-}
-
-#artemis p {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 340%;
-
-}
-
-#artemispic {
-    filter: blur(200%);
-    -webkit-filter: blur(200%);
-    -moz-filter: blur(200%);
-    -o-filter: blur(200%);
-    -ms-filter: blur(200%);
-
-}
-
-}
-
-#latest-news img {
-  display: none !important;
-}
-
-#update {
-    background-color: #4CAF50;
-    color: #fff;
-}
-
-#delete {
-    background-color: #f44336;
-    color: #fff;
-}
-
-#pagination a {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.contact {
-    color: #FF0000;
-}
+// /***Vehicles Styling ***/
+
+// #thor{
+//     text-align: center;
+//     /* background: url("{{ "/assets/images/argo3.png" | relative_url }}") no-repeat bottom center; */
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     min-height: 800px;
+//     background-color: #fff !important;
+//     border-bottom: 2px solid #eee;
+// }
+
+// #thor h1 {
+//     font-family: "Source Sans Pro", Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: 660%;
+//     margin-bottom: -10px;
+//     padding-bottom: 0px;
+//     margin-top: -30px;
+// }
+
+// #thor p {
+//     font-family: "Source Sans Pro", Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: 380%;
+// }
+
+// #vehicles p {
+//     font-size: 16px;
+// }
+
+// #vehicles a {
+//     text-align: center;
+//     border: 0px;
+// }
+
+// .nav-justified {
+//     border:none;
+// }
+
+// .visited {
+//     border: 1px solid #888;
+// }
+
+// #vehicles img {
+// 	transition: all .2s ease-in-out;
+// 	filter: blur(0);
+// }
+
+// #vehicles img {
+//     margin: auto;
+// }
+
+// #vehicles img:hover {
+// 	transform: scale(1.05);
+// 	filter: blur(0);
+// }
+
+// .badge {
+//     background-color: #d42c27;
+//     font-weight: normal;
+//     font-size: 17px;
+// }
+
+
+// #sideview {
+//     display: none;
+// }
+
+// #frontview {
+//     display: none;
+// }
+
+// #loki_sideview {
+//     display: none;
+// }
+
+// #loki_frontview {
+//     display: none;
+// }
+
+// #trueview {
+//     display: none;
+// }
+
+// .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+//     background-color: #D42C30;
+// }
+
+// .nav>li>a:focus, .nav>li>a:hover {
+//     background-color: transparent;
+// }
+
+// a {
+//     color: #222;
+//     font-size: 16px;
+// }
+
+// .nav-pills>li{
+//     background-color: #fff;
+//     border: 2px solid #d8d8d8;
+//     border-radius: 10px;
+// }
+
+// /* Blur + Gray Scale */
+// map {
+//     display: inline;
+// }
+
+// .hover10 figure img {
+// 	opacity: 0.7;
+//     -webkit-filter: grayscale(5%) blur(0px);
+//     filter: grayscale(5%) blur(0px);
+//     /*-webkit-animation:spin 4s linear infinite;
+//     -moz-animation:spin 4s linear infinite;
+//     animation:spin 4s linear infinite;*/
+
+// }
+// .hover10 figure:hover img {
+// 	opacity: 0.4;
+//     -webkit-filter: grayscale(50%) blur(1px);
+//     filter: grayscale(50%) blur(1px);
+//     /*-webkit-transition: .3s ease-in-out;
+//     transition: .3s ease-in-out;*/
+
+// }
+// /*@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+// @-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+// @keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }*/
+
+
+// /* Sponsors Styling */
+
+// #sponsors {
+//      text-align: center;
+//     background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     min-height: 500px;
+//     color: #fff;
+//     margin-top: -20px;
+
+// }
+
+// #sponsors2 {
+//     text-align: center;
+//     background-color: #fff;
+// }
+
+// #sponsors2 img {
+//     max-width: 100%;
+//     max-height: 100px;
+//      padding: 5px;
+// }
+
+// #sponsors2 a {
+//     color: #222;
+// }
+
+// #sponsors2 .col-md-2, #sponsors2 .col-md-3, #sponsors2 .col-md-4 {
+//     height: 100px;
+
+// }
+
+// #sponsors2 h3 {
+//     font-size: 45px;
+// }
+
+// #sponsors2 img:hover {
+//     opacity: .7;
+// }
+
+// #sponsorsbutton {
+//     margin-top: 0px;
+//     font-size: 16px;
+//     text-align: left;
+//     border: 1px solid #D42C30;
+//     display:block;
+//     margin:auto;
+//     margin-bottom: 10px;
+// }
+
+
+// #open_source {
+//      text-align: center;
+//      background-color: #fff;
+//      /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     min-height: 300px;
+//     margin-top: -20px;
+// }
+
+// #open_source p {
+//     text-align: center;
+// }
+
+
+// #open_source_1 {
+//      text-align: center;
+//      background-color: #f9f9f9;
+//      /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
+// }
+
+// #open_source_1 h2 {
+//      text-align: left;
+//      font-size: 42px;
+//      color: #222;
+//      /* background: url("{{ "/assets/images/sponsor.jpg" | relative_url }}") no-repeat center center; */
+// }
+
+// #github {
+//     margin-bottom: 35px;
+// }
+
+// .open_source p {
+//     text-align: left;
+//     color: #222;
+//     padding-bottom: 15px;
+//     margin-bottom: 0px;
+//     margin-top:0px;
+//     font-weight: 400;
+// }
+
+// .open_source h1 {
+//     text-align: left;
+// }
+
+// .open_source span {
+//     float: right;
+//     color: #222;
+//     padding-top: 5px;
+// }
+
+// #wallpapers span {
+//     float: left;
+//     margin-right: 5px;
+//     color: #fff;
+//     margin-bottom: 5px;
+//     margin-top:2px;
+// }
+
+// #wallpapers a {
+//     color: #fff;
+// }
+
+// #wallpapers span:hover {
+//     background-color: #222;
+// }
+
+// #github span {
+//     float: none;
+//     color:#fff;
+//     padding-top:0px;
+// }
+
+// .open_source p:hover {
+//     color: #D42C30;
+// }
+
+// .open_source iframe {
+//     border: 1px solid transparent;
+// }
+
+
+// /* Contact */
+
+// #contact {
+//     text-align: left;
+//     background-color: #fff;
+// }
+
+// a.accordion-toggle:hover, a.accordion-toggle:focus, .panel-body a {
+//     color: #d42c30;
+// }
+
+// #contact h1 {
+//     margin-top: 0px;
+// }
+
+// .nav-pills a {
+//     color: #000;
+//     text-align: left;
+// }
+
+// .nav-pills a:hover {
+//     color: #D42C30;
+// }
+
+// @media (max-width:499px){
+
+// 	#hero {
+//     text-align: center;
+//     margin-top: -80px;
+//     background: url("{{ "/assets/images/artemisapollo.png" | relative_url }}") no-repeat bottom center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size:auto 500px;
+//     min-height: 500px;
+
+
+// }
+
+
+//     #hero h1 {
+//         font-family: "Source Sans Pro", Helvetica, sans-serif;
+//         font-weight: 300;
+//         font-size: 750%;
+//         margin-bottom: -10px;
+//         padding-bottom: 0px;
+//         margin-top: 50px;
+//     }
+
+//     #cuauvlogo {
+//         width: 75%;
+//         margin-top: 12%;
+//     }
+
+//     #hero p {
+//         font-family: "Source Sans Pro", Helvetica, sans-serif;
+//         font-weight: 300;
+//         font-size: 220%;
+//     }
+
+
+// #artemis h1 {
+//     font-family: "Source Sans Pro", Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: 550%;
+//     margin-bottom: -10px;
+//     padding-bottom: 0px;
+//      margin-top: -25px;
+// }
+
+// #artemis p {
+//     font-family: "Source Sans Pro", Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: 340%;
+
+// }
+
+// #artemispic {
+//     filter: blur(200%);
+//     -webkit-filter: blur(200%);
+//     -moz-filter: blur(200%);
+//     -o-filter: blur(200%);
+//     -ms-filter: blur(200%);
+
+// }
+
+// }
+
+// #latest-news img {
+//   display: none !important;
+// }
+
+// #update {
+//     background-color: #4CAF50;
+//     color: #fff;
+// }
+
+// #delete {
+//     background-color: #f44336;
+//     color: #fff;
+// }
+
+// #pagination a {
+//     font-weight: bold;
+//     font-size: 18px;
+// }
+
+// .contact {
+//     color: #FF0000;
+// }
