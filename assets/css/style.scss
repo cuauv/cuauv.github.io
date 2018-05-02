@@ -15,150 +15,133 @@
 }
 
 #about1 {
-    display: flex;
-    align-items: center;
-    margin-top: 0px;
-    padding-top: 0px;
-}
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  background: url("{{ "/assets/images/team.png" | relative_url }}") no-repeat center bottom;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
 
-#about1 h1 {
-  text-align: center;
-  font-weight: 500;
-  color: #fff;
-  margin: auto;
-}
-
-#about1 {
-    background: url("{{ "/assets/images/team.png" | relative_url }}") no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 50vh;
+  h1 {
+    font-weight: 500;
+    color: #fff;
+  }
 }
 
 #about2 {
   padding-top: 8em;
   padding-bottom: 8em;
-}
 
-#about2 h5 {
-  letter-spacing: 0;
-  margin-bottom: 2em;
-  color: #B8B8B8;
-  font-weight: 500;
-  text-transform: uppercase;
-}
+  h5 {
+    letter-spacing: 0;
+    margin-bottom: 2em;
+    color: #B8B8B8;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 
-#about2 h4 {
-  font-family: "Merriweather", serif;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  color: #222;
-  font-weight: 400;
-}
+  h4 {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #222;
+    font-weight: 400;
+  }
 
-#about2 h3 {
-  letter-spacing: 0;
-  margin-bottom: 0;
-  color: #222;
-  font-weight: 00;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2em;
-  text-transform: uppercase;
-}
+  h3 {
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #222;
+    font-weight: 00;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+  }
 
-#about2 mark {
-  color: #E42129;
-  background-color: transparent;
-}
-
-#about3 h4 {
-  letter-spacing: 0;
-  margin-bottom: 1em;
-  color: #222;
-  font-weight: 500;
-}
-
-#about3 h5 {
-  font-family: "Merriweather", serif;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  color: #222;
-  font-weight: 300;
+  mark {
+    color: #E42129;
+    background-color: transparent;
+  }
 }
 
 #about3 {
   background-color: #fafafa;
   padding-bottom: 8em;
   padding-top: 8em;
-}
 
-#about4 h4 {
-  letter-spacing: 0;
-  margin-bottom: 1em;
-  color: #222;
-  font-weight: 500;
-}
+  h4 {
+    letter-spacing: 0;
+    margin-bottom: 1em;
+    color: #222;
+    font-weight: 500;
+  }
 
-#about4 h5 {
-  font-family: "Merriweather", serif;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  color: #222;
-  font-weight: 300;
+  h5 {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #222;
+    font-weight: 300;
+  }
 }
 
 #about4 {
   text-align: right;
   padding-bottom: 8em;
   padding-top: 8em;
+
+  h4 {
+    letter-spacing: 0;
+    margin-bottom: 1em;
+    color: #222;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #222;
+    font-weight: 300;
+  }
 }
 
+#about5 {
+  display: flex;
+}
 
-#software{
+#software {
     text-align: left;
     color: #fff;
     background: url("{{ "/assets/images/software2016.jpg" | relative_url }}") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     min-height: 800px;
 }
 
-#mechanical{
+#mechanical {
     text-align: right;
     color: #fff;
     background: url("{{ "/assets/images/mechanical.png" | relative_url }}") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     min-height: 800px;
 }
 
-#electrical{
+#electrical {
     text-align: left;
     color: #fff;
     background: url("{{ "/assets/images/electrical2016.jpg" | relative_url }}") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     min-height: 800px;
 }
 
-#business{
+#business {
     text-align: right;
     color: #fff;
     background: url("{{ "/assets/images/business.jpg" | relative_url }}") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     min-height: 800px;
 }
