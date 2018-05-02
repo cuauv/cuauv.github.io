@@ -26,6 +26,10 @@ body {
 
 /***About Us Styling ***/
 
+.sample-small-container {
+  @include xy-grid-container(rem-calc(800), $grid-container-padding);
+}
+
 #about1 {
     display: flex;
     align-items: center;
