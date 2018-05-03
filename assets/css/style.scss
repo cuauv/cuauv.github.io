@@ -19,15 +19,29 @@
   align-items: center;
   margin-top: 0px;
   padding-top: 0px;
-  background: url("{{ "/assets/images/team.png" | relative_url }}") no-repeat center bottom;
-  background-size: cover;
+  background-color: black;
+  // background: url("{{ "/assets/images/team.png" | relative_url }}") no-repeat center bottom;
+  // background-size: cover;
   overflow: hidden;
   width: 100%;
   height: 50vh;
+  display: inline-block;
+  vertical-align: middle;
 
   h1 {
     font-weight: 500;
     color: #fff;
+    z-index: 1;
+    text-align: center;
+  }
+
+  img {
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+    width: 100%;
+    opacity: .3;
+    z-index: 0;
   }
 }
 
