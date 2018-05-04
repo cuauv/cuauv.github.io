@@ -568,12 +568,14 @@ $site-logo-width: 80px;
 
 #site-logo {
   position: absolute;
+  top: -1px;
   z-index: 10;
   width: $site-logo-width;
 }
 
 .site-title {
   position: relative;
-  left: $site-logo-width;
+  left: -$site-logo-width / 2; // This is to make link area extend fully into logo
+  margin-left: $site-logo-width - 15px + $site-logo-width / 2;
   font-size: 2.5rem;
 }
