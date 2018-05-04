@@ -7,6 +7,15 @@
 @import 'foundation/foundation';
 @include foundation-everything;
 
+
+/*** General Styling ***/
+
+.inherit-size {
+  width: inherit;
+  height: inherit;
+}
+
+
 /***About Us Styling ***/
 
 .center-container {
@@ -14,27 +23,20 @@
 }
 
 #about1 {
-  display: flex;
-  align-items: center;
-  margin-top: 0px;
-  padding-top: 0px;
-  background-color: black;
-  overflow: hidden;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
+  background-color: black;
 
   img {
     position: absolute;
     object-fit: cover;
     opacity: .3;
-    width: inherit;
-    height: inherit;
   }
 
   h1 {
+    position: relative;
     font-weight: 500;
     color: #fff;
-    z-index: 1;
   }
 }
 
@@ -549,3 +551,8 @@
 // .contact {
 //     color: #FF0000;
 // }
+
+
+.footer-container {
+  @include xy-grid-container(rem-calc(1400), $grid-container-padding);
+}
