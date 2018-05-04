@@ -1,11 +1,43 @@
-<nav class="top-bar" role="navigation">
+<nav class="top-bar fixed" role="navigation">
     <div class="top-bar-left">
         <ul class="menu">
             <li>
                 <a href="{{ "/" | relative_url }}">
-                    <img src="{{ "/assets/images/logo-01.png" | relative_url }}" id="logo" alt="logo" width="80px" style="float:left">
-                    <p style="float:left; margin-top: 17px; font-size:34px; color: #D42C30; margin-left:15px"> {{ site.title | escape }} </p>
-                    <!-- {{ site.title | escape }} -->
+                    <img id="site-logo" src="{{ "/assets/images/logo-01.png" | relative_url }}" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a class="site-title" href="{{ "/" | relative_url }}">
+                    {{ site.title | escape }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li>
+                <a href="{{ "/news" | relative_url }}">NEWS</a>
+            </li>
+
+            {% assign pages = site.pages | sort: "order" %}
+            {% for page in pages %}
+                {% if page.title and page.navbar != false %}
+                    <li>
+                        <a href="{{ page.url | relative_url }}">{{ page.title | upcase | escape }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+
+<nav class="top-bar" role="navigation">
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li>
+                <a class="site-title" href="{{ "/" | relative_url }}">
+                    {{ site.title | escape }}
                 </a>
             </li>
         </ul>
