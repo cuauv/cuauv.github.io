@@ -20,6 +20,11 @@
   z-index: 5;
 }
 
+a {
+  color: #E42129;
+  font-weight: 500;
+}
+
 
 /***About Us Styling ***/
 
@@ -562,6 +567,12 @@
 
 .top-bar.fixed {
   width: 100%;
+}
+
+.top-bar {
+  background-color: #252525;
+  color: #E42129;
+  box-shadow: rgb(219, 219, 219) 0px 3px 6px 0px;
 }
 
 $site-logo-width: 80px;
