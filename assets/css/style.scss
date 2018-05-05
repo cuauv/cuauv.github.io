@@ -591,10 +591,7 @@ $site-logo-height: 40px;
     position: absolute;
     z-index: 10;
     height: $site-logo-height;
-    // The magic numbers come from the AI logo file.
-    // 848.003 is the center of the prop
-    // 386.67 is the width of the artbox
-    transform-origin: 848.003 / 386.67 * $site-logo-height $site-logo-height / 2;
+    left: 83.5px;
   }
 
 }
