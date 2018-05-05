@@ -2,13 +2,11 @@
     <div class="top-bar-left">
         <ul class="menu">
             <li>
-                <a href="{{ "/" | relative_url }}">
-                    <img id="site-logo" src="{{ "/assets/images/logo-01.png" | relative_url }}" alt="logo">
-                </a>
-            </li>
-            <li>
                 <a class="site-title" href="{{ "/" | relative_url }}">
-                    {{ site.title | escape }}
+                    <div class="site-logo">
+                        <img class="site-logo-text" src="{{ "/assets/images/white_text_no_prop.svg" | relative_url }}" alt="CUAUV">
+                        <img class="site-logo-prop" src="{{ "/assets/images/red_prop_text_aligned.svg" | relative_url }}">
+                    </div>
                 </a>
             </li>
         </ul>

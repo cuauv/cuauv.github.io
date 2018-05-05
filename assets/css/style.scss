@@ -567,26 +567,34 @@ a {
 
 .top-bar.fixed {
   width: 100%;
-}
-
-.top-bar {
   background-color: #252525;
   color: #E42129;
   box-shadow: rgb(219, 219, 219) 0px 3px 6px 0px;
+
+  a {
+    color: $dark-gray;
+  }
 }
 
-$site-logo-width: 80px;
+$site-logo-height: 40px;
 
-#site-logo {
-  position: absolute;
-  top: -1px;
-  z-index: 10;
-  width: $site-logo-width;
-}
+.site-logo {
+  height: $site-logo-height;
 
-.site-title {
-  position: relative;
-  left: -$site-logo-width / 2; // This is to make link area extend fully into logo
-  margin-left: $site-logo-width - 15px + $site-logo-width / 2;
-  font-size: 2.5rem;
+  .site-logo-text {
+    position: absolute;
+    z-index: 10;
+    height: $site-logo-height;
+  }
+
+  .site-logo-prop {
+    position: absolute;
+    z-index: 10;
+    height: $site-logo-height;
+    // The magic numbers come from the AI logo file.
+    // 848.003 is the center of the prop
+    // 386.67 is the width of the artbox
+    transform-origin: 848.003 / 386.67 * $site-logo-height $site-logo-height / 2;
+  }
+
 }
