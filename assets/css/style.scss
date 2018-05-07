@@ -60,6 +60,7 @@ a {
     color: #B8B8B8;
     font-weight: 500;
     text-transform: uppercase;
+    font-size: 1rem;
   }
 
   h4 {
@@ -68,6 +69,7 @@ a {
     margin-bottom: 0;
     color: #222;
     font-weight: 400;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -97,6 +99,7 @@ a {
     margin-bottom: 1em;
     color: #222;
     font-weight: 500;
+    font-size: 1.5rem;
   }
 
   h5 {
@@ -105,6 +108,10 @@ a {
     margin-bottom: 0;
     color: #222;
     font-weight: 300;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
@@ -118,6 +125,7 @@ a {
     margin-bottom: 1em;
     color: #222;
     font-weight: 500;
+    font-size: 1.5rem;
   }
 
   h5 {
@@ -141,7 +149,84 @@ a {
 }
 
 #bound {
+  background-color: #fff;
+}
+
+#about-tabs {
   background-color: #fafafa;
+  padding-top: 8em;
+  padding-bottom: 8em;
+
+  h5 {
+    letter-spacing: 0;
+    margin-bottom: 2em;
+    color: #B8B8B8;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-family: "Merriweather", serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #222;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #222;
+    font-weight: 00;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+  }
+
+  mark {
+    color: #E42129;
+    background-color: transparent;
+  }
+
+  .tabs {
+    border: none;
+  }
+
+  .tabs-content {
+    border: none;
+  }
+
+  .tabs-panel {
+    padding: 0;
+  }
+
+  li {
+    text-transform: uppercase;
+  }
+
+  .tabs-title>a {
+    font-size: 1.25rem;
+    padding-left: 0;
+    padding-right: 3em;
+    margin-bottom: 3em;
+    outline: none;
+  }
+
+  a {
+    color: $medium-gray;
+  }
+
+  a:focus {
+    color: $black;
+  }
+
+  .tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
+    background: transparent;
+    color: $black;
+  }
 }
 
 #software {
