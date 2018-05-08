@@ -143,8 +143,12 @@ a {
       margin-bottom: 3em;
       outline: none;
 
-      &:focus, &:hover, &[aria-selected='true'] {
+      &:focus, &:hover {
         color: $black;
+      }
+
+      &[aria-selected='true'] {
+        color: $primary-color;
       }
     }
   }
