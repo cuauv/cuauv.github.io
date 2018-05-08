@@ -32,7 +32,7 @@ a {
   @include xy-grid-container(rem-calc(800), $grid-container-padding);
 }
 
-#about1 {
+.about-header {
   width: 100vw;
   height: 50vh;
   background-color: black;
@@ -50,11 +50,15 @@ a {
   }
 }
 
-#about2 {
+.about-card {
   padding-top: 8em;
   padding-bottom: 8em;
 
-  h5 {
+  &.dark {
+    background-color: #fafafa
+  }
+
+  h2 {
     letter-spacing: 0;
     margin-bottom: 2em;
     color: #B8B8B8;
@@ -63,7 +67,7 @@ a {
     font-size: 1rem;
   }
 
-  h4 {
+  h3 {
     font-family: "Merriweather", serif;
     letter-spacing: 0;
     margin-bottom: 0;
@@ -71,198 +75,64 @@ a {
     font-weight: 400;
     font-size: 1.5rem;
   }
+  
+  h4 {
+    letter-spacing: 0;
+    margin-bottom: 1em;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
 
-  h3 {
+  h5 {
+    font-family: "Merriweather", serif;
     letter-spacing: 0;
     margin-bottom: 0;
     color: #222;
-    font-weight: 00;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2em;
-    text-transform: uppercase;
+    font-weight: 300;
   }
 
-  mark {
+  .strong-text {
     color: #E42129;
-    background-color: transparent;
   }
 }
 
-#about3 {
-  background-color: #fafafa;
-  padding-bottom: 8em;
+.about-compact {
+  margin-bottom: -2em;
   padding-top: 8em;
 
-  h4 {
-    letter-spacing: 0;
-    margin-bottom: 1em;
-    color: #222;
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-family: "Merriweather", serif;
-    letter-spacing: 0;
-    margin-bottom: 0;
-    color: #222;
-    font-weight: 300;
-  }
-
-  img {
-    width: 100%;
-  }
-}
-
-#about4 {
-  text-align: right;
-  padding-bottom: 8em;
-  padding-top: 8em;
-
-  h4 {
-    letter-spacing: 0;
-    margin-bottom: 1em;
-    color: #222;
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-family: "Merriweather", serif;
-    letter-spacing: 0;
-    margin-bottom: 0;
-    color: #222;
-    font-weight: 300;
-  }
-}
-
-#about5 {
-  display: flex;
   h3 {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .1em;
   }
-  margin-bottom: -2em;
-  padding-top: 8em;
 }
 
-#bound {
-  background-color: #fff;
-}
-
-#about-tabs {
-  background-color: #fafafa;
-  padding-top: 8em;
-  padding-bottom: 8em;
-
-  h5 {
-    letter-spacing: 0;
-    margin-bottom: 2em;
-    color: #B8B8B8;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1rem;
-  }
-
-  h4 {
-    font-family: "Merriweather", serif;
-    letter-spacing: 0;
-    margin-bottom: 0;
-    color: #222;
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    letter-spacing: 0;
-    margin-bottom: 0;
-    color: #222;
-    font-weight: 00;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2em;
-    text-transform: uppercase;
-  }
-
-  mark {
-    color: #E42129;
-    background-color: transparent;
-  }
-
-  .tabs {
+.about-tabs {
+  .tabs, .tabs-content {
     border: none;
   }
 
-  .tabs-content {
-    border: none;
+  .tabs-title {
+    text-transform: uppercase;
+
+    a {
+      font-size: 1.25rem;
+      color: $medium-gray;
+      padding-left: 0;
+      padding-right: 3em;
+      margin-bottom: 3em;
+      outline: none;
+
+      &:focus, &[aria-selected='true'] {
+        color: $black;
+      }
+    }
   }
 
   .tabs-panel {
     padding: 0;
   }
-
-  li {
-    text-transform: uppercase;
-  }
-
-  .tabs-title>a {
-    font-size: 1.25rem;
-    padding-left: 0;
-    padding-right: 3em;
-    margin-bottom: 3em;
-    outline: none;
-  }
-
-  a {
-    color: $medium-gray;
-  }
-
-  a:focus {
-    color: $black;
-  }
-
-  .tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
-    background: transparent;
-    color: $black;
-  }
-}
-
-#software {
-    text-align: left;
-    color: #fff;
-    background: url("{{ "/assets/images/software2016.jpg" | relative_url }}") no-repeat center center;
-    background-size: cover;
-    min-height: 800px;
-}
-
-#mechanical {
-    text-align: right;
-    color: #fff;
-    background: url("{{ "/assets/images/mechanical.png" | relative_url }}") no-repeat center center;
-    background-size: cover;
-    min-height: 800px;
-}
-
-#electrical {
-    text-align: left;
-    color: #fff;
-    background: url("{{ "/assets/images/electrical2016.jpg" | relative_url }}") no-repeat center center;
-    background-size: cover;
-    min-height: 800px;
-}
-
-#business {
-    text-align: right;
-    color: #fff;
-    background: url("{{ "/assets/images/business.jpg" | relative_url }}") no-repeat center center;
-    background-size: cover;
-    min-height: 800px;
-}
-
-.modal-content {
-    border: 2px solid #D42C30;
 }
 
 // /***Vehicles Styling ***/

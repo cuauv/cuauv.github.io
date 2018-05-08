@@ -5,8 +5,7 @@ permalink: /about
 order: 1
 ---
 
-<!-- Page Content -->
-<div id="about1">
+<div class="about-header">
   <img class="inherit-size" src="assets/images/team.png"/>
   <div class="grid-x grid-padding-x align-center-middle inherit-size">
     <div class="cell shrink">
@@ -15,26 +14,25 @@ order: 1
   </div>
 </div>
 
-<div id="about2">
+<div class="about-card">
   <div class="center-container">
     <div class="grid-x">
       <div class="cell shrink">
-        <h5>About Us</h5>
+        <h2>About Us</h2>
       </div>
     </div>
     <div class="grid-x">
-      <h4><mark>Cornell University Autonomous Underwater Vehicle</mark> designs and builds AUVs for competition and research. The team and its vehicle have received acclaim and support from industry professionals as a result of its performance and long-standing tradition of excellence.</h4>
+      <h3><span class="strong-text">Cornell University Autonomous Underwater Vehicle</span> designs and builds AUVs for competition and research. The team and its vehicle have received acclaim and support from industry professionals as a result of its performance and long-standing tradition of excellence.</h3>
     </div>
   </div>
 </div>
 
-<div id="about3">
+<div class="about-card dark">
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell small-4">
         <h4>2 New Vehicles</h4>
-        <h5>CUAUV’s autonomous underwater vehicles are a testament to
-our team’s engineering excellence. Each year we build upon our past vehicles and develop two entirely new AUVs to simultaneously complete the AUVSI RoboSub course.</h5>
+        <h5>CUAUV’s autonomous underwater vehicles are a testament to our team’s engineering excellence. Each year we build upon our past vehicles and develop two entirely new AUVs to simultaneously complete the AUVSI RoboSub course.</h5>
       </div>
       <div class="cell small-6 small-offset-2">
         <img src="assets/images/vehicle.png"/>
@@ -43,7 +41,7 @@ our team’s engineering excellence. Each year we build upon our past vehicles a
 </div>
 </div>
 
-<div id="about4">
+<div class="about-card text-right">
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell small-6">
@@ -57,7 +55,7 @@ our team’s engineering excellence. Each year we build upon our past vehicles a
   </div>
 </div>
 
-<div id="about3">
+<div class="about-card dark">
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell small-4">
@@ -71,7 +69,7 @@ our team’s engineering excellence. Each year we build upon our past vehicles a
   </div>
 </div>
 
-<div id="about4">
+<div class="about-card text-right">
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell small-6">
@@ -85,61 +83,42 @@ our team’s engineering excellence. Each year we build upon our past vehicles a
   </div>
 </div>
 
-<div id="about-tabs">
+<div class="about-card about-tabs dark">
   <div class="grid-container">
     <div class="grid-x">
       <ul class="tabs" data-tabs id="subteam-tabs">
-        <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Software</a></li>
-        <li class="tabs-title"><a href="#panel2c">Mechanical</a></li>
-        <li class="tabs-title"><a href="#panel3c">Electrical</a></li>
-        <li class="tabs-title"><a href="#panel4c">Business</a></li>
+        <li class="tabs-title is-active"><a href="#panel-software" aria-selected="true">Software</a></li>
+        <li class="tabs-title"><a href="#panel-mechanical">Mechanical</a></li>
+        <li class="tabs-title"><a href="#panel-electrical">Electrical</a></li>
+        <li class="tabs-title"><a href="#panel-business">Business</a></li>
       </ul>
+
       <div class="tabs-content" data-tabs-content="subteam-tabs">
-        <div class="tabs-panel is-active" id="panel1c">
-          <div class="grid-x">
-            <div class="cell shrink">
-              <h5>Description</h5>
-            </div>
-          </div>
-          <div class="grid-x">
-            <div class="cell">
-              <h4><mark>Software subteam</mark> writes all of the code that executes on the submarine's main computer and any additional infrastructure and tooling. They also build auxiliary software such as simulation, visualization, and automation tools that enable us to efficiently develop mission systems that accomplish the requisite task.</h4>
-            </div>
+        <div class="grid-x">
+          <div class="cell shrink">
+            <h2>Description</h2>
           </div>
         </div>
-        <div class="tabs-panel" id="panel2c">
-          <div class="grid-x">
-            <div class="cell shrink">
-              <h5>Description</h5>
+
+        <div class="grid-x">
+          <div class="cell">
+
+            <div class="tabs-panel is-active" id="panel-software">
+              <h3><span class="strong-text">Software subteam</span> writes all of the code that executes on the submarine's main computer and any additional infrastructure and tooling. They also build auxiliary software such as simulation, visualization, and automation tools that enable us to efficiently develop mission systems that accomplish the requisite task.</h3>
             </div>
-          </div>
-          <div class="grid-x">
-            <div class="cell">
-              <h4><mark>Mechanical subteam</mark> is comprised of 10 undergraduate students across three subteams, the Actuators, Racks Caps and Cameras, and Structures subteam. Over the course of the year, the vehicle is designed in Solidworks, simulated in ANSYS, manufactured in house at the Cornell Emerson Machine shop, integrated and tested in Teagle pool, and finally taken apart and shipped to San Diego for competition.</h4>
+
+            <div class="tabs-panel" id="panel-mechanical">
+              <h3><span class="strong-text">Mechanical subteam</span> is comprised of 10 undergraduate students across three subteams, the Actuators, Racks Caps and Cameras, and Structures subteam. Over the course of the year, the vehicle is designed in Solidworks, simulated in ANSYS, manufactured in house at the Cornell Emerson Machine shop, integrated and tested in Teagle pool, and finally taken apart and shipped to San Diego for competition.</h3>
             </div>
-          </div>        </div>
-        <div class="tabs-panel" id="panel3c">
-          <div class="grid-x">
-            <div class="cell shrink">
-              <h5>Description</h5>
+
+            <div class="tabs-panel" id="panel-electrical">
+              <h3><span class="strong-text">Electrical subteam</span> designs, populates, and tests circuit boards which provide power to the onboard electronics, interface with the various sensors, including a custom acoustic sensing system, and control the vehicle's actuators and thrusters.</h3>
             </div>
-          </div>
-          <div class="grid-x">
-            <div class="cell">
-              <h4><mark>Electrical subteam</mark> designs, populates, and tests circuit boards which provide power to the onboard electronics, interface with the various sensors, including a custom acoustic sensing system, and control the vehicle's actuators and thrusters.</h4>
+
+            <div class="tabs-panel" id="panel-business">
+              <h3><span class="strong-text">Business subteam</span> is responsible for all business development as well as marketing and communications for the CUAUV engineering project team. The subteam publishes journal papers and newsletters, designs the official CUAUV website, and plans community outreach events. The subteam also manages the team’s finances and builds strong partnerships with sponsors.</h3>
             </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panel4c">
-          <div class="grid-x">
-            <div class="cell shrink">
-              <h5>Description</h5>
-            </div>
-          </div>
-          <div class="grid-x">
-            <div class="cell">
-              <h4><mark>Business subteam</mark> is responsible for all business development as well as marketing and communications for the CUAUV engineering project team. The subteam publishes journal papers and newsletters, designs the official CUAUV website, and plans community outreach events. The subteam also manages the team’s finances and builds strong partnerships with sponsors.</h4>
-            </div>
+
           </div>
         </div>
       </div>
@@ -147,28 +126,26 @@ our team’s engineering excellence. Each year we build upon our past vehicles a
   </div>
 </div>
 
-<div id="bound">
-  <div id="about5">
-    <div class="center-container">
-      <div class="grid-x">
-        <div class="cell">
-          <h3>Outreach</h3>
-        </div>
+<div class="about-compact">
+  <div class="center-container">
+    <div class="grid-x grid-padding-x align-center-middle">
+      <div class="cell shrink">
+        <h3>Outreach</h3>
       </div>
     </div>
   </div>
+</div>
 
-  <div id="about2">
-    <div class="center-container">
-      <div class="grid-x">
-        <div class="cell shrink">
-          <h5>Description</h5>
-        </div>
+<div class="about-card">
+  <div class="center-container">
+    <div class="grid-x">
+      <div class="cell shrink">
+        <h2>Description</h2>
       </div>
-      <div class="grid-x">
-        <div class="cell">
-          <h4>Along with hosting lab tours with visiting companies, we organize multiple outreach events to better acquaint the greater Cornell and Ithaca communities with our team and our sponsors. Along with lab tours to visiting schools and organizations, we visit local elementary, middle and high schools for various STEM events.</h4>
-        </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <h3>Along with hosting lab tours with visiting companies, we organize multiple outreach events to better acquaint the greater Cornell and Ithaca communities with our team and our sponsors. Along with lab tours to visiting schools and organizations, we visit local elementary, middle and high schools for various STEM events.</h3>
       </div>
     </div>
   </div>
