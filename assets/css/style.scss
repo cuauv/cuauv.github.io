@@ -113,6 +113,25 @@ a {
     border: none;
   }
 
+  button {
+    display: inline-block;
+    padding: 1em 1.5em;
+    color: $black;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 2em;
+    border: 1px solid $black;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+  
   .tabs-title {
     text-transform: uppercase;
 
