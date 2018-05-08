@@ -75,7 +75,7 @@ a {
     font-weight: 400;
     font-size: 1.5rem;
   }
-  
+
   h4 {
     letter-spacing: 0;
     margin-bottom: 1em;
@@ -124,7 +124,7 @@ a {
       margin-bottom: 3em;
       outline: none;
 
-      &:focus, &[aria-selected='true'] {
+      &:focus, &:hover, &[aria-selected='true'] {
         color: $black;
       }
     }
