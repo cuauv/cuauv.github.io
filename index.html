@@ -6,18 +6,82 @@ layout: default
 <div class="grid-container">
     <div class="grid-y align-center text-center">
         <div class="cell shrink">
-            <img id="cuauvlogo" src="{{ "/assets/images/newlogo.svg" | relative_url }}" alt="CUAUV">    
+            <h2>Introducing</h2>
         </div>
         <div class="cell shrink">
-            <h2>Introducing</h2> 
-        </div>
-        <div class="cell shrink">
-            <h2>Castor &amp; Pollux</h2> 
+            <h2>Castor &amp; Pollux</h2>
         </div>
         <div class="cell shrink">
             <img id="cuauvlogo" src="{{ "/assets/images/artemisapollo.png" | relative_url }}" alt="Castor &amp; Pollux">
         </div>
     </div>
+</div>
+
+<div class="about-card">
+  <div class="grid-container">
+    <div class="grid-x align-justify">
+      <div class="cell small-5">
+        <h4>2 New Vehicles</h4>
+        <h5>CUAUV’s autonomous underwater vehicles are a testament to our team’s engineering excellence. Each year we build upon our past vehicles and develop two entirely new AUVs to simultaneously complete the AUVSI RoboSub course.</h5>
+      </div>
+      <div class="cell small-6">
+        <img src="{{ "/assets/images/vehicle.png" | relative_url }}"/>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="about-card">
+  <div class="grid-container">
+    <div class="grid-x align-justify">
+      <div class="cell small-6">
+        <img src="{{ "/assets/images/championship.png" | relative_url }}"/>
+      </div>
+      <div class="cell small-5">
+        <h4>7 Championships</h4>
+        <h5>As a seven-time RoboSub champion, CUAUV embodies a tradition of excellence and continuously pushes the envelope of autonomous underwater vehicle technology.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-card">
+  <div class="grid-container">
+    <div class="grid-x align-justify">
+      <div class="cell small-5">
+        <h4>Diverse Team</h4>
+        <h5>CUAUV is entirely undergraduate-run, consisting of over 40 students spanning 8 diverse academic disciplines. We are divided into 4 subteams: Software, Mechanical, Electrical, and Business.</h5>
+      </div>
+      <div class="cell small-6">
+        <img src="{{ "/assets/images/diversity.jpg" | relative_url }}"/>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-compact">
+  <div class="center-container">
+    <div class="grid-x grid-padding-x align-center-middle">
+      <div class="cell shrink">
+        <h3>Outreach</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="about-card">
+  <div class="center-container">
+    <div class="grid-x">
+      <div class="cell shrink">
+        <h2>Description</h2>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <h3>Along with hosting lab tours with visiting companies, we organize multiple outreach events to better acquaint the greater Cornell and Ithaca communities with our team and our sponsors. Along with lab tours to visiting schools and organizations, we visit local elementary, middle and high schools for various STEM events.</h3>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="grid-container">
@@ -56,34 +120,9 @@ layout: default
     </div>
 </div>
 
-<script src="{{ "/assets/js/instafeed.min.js" | relative_url }}"></script>
-
-<script type="text/javascript">
- //Gets Instagram Feed
- var userFeed = new Instafeed({
-     get: 'user',
-     userId: 2191060614,
-     accessToken: '2191060614.e899d1b.a5970a9d29894bb19ce10b7574fea07c',
-     sortBy: 'most-recent',
-     limit: 4,
-     template: {% raw %} '<a href="{{link}}" target="_blank"><img src="{{image}}" width=50%" /></a>', {% endraw %}
-     resolution: 'standard_resolution'
- });
- userFeed.run();
-</script>
-
 <script>
  //Gets Twitter Feed
  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
      if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
          fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script>
-
-<script>
- // //Fade in Logo, Hero Title, and Call-to-Action button with a delay for each.
- // $(document).ready(function () {
- //     $('#hero #cuauvlogo').fadeIn(2000);
- //     $("#hero p").delay(800).fadeIn(2000);
- //     $("#hero #vehiclebuttondiv").delay(1600).fadeIn(2000);
- // });
 </script>

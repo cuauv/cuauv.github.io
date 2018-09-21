@@ -55,7 +55,7 @@ a {
   padding-bottom: 4em;
 
   &.dark {
-    background-color: #fafafa
+    background-color: #fcfcfc;
   }
 
   h2 {
@@ -155,11 +155,13 @@ a {
   .name {
     color: $black;
     margin-top: 1em;
-    margin-bottom: .5em;
+    margin-bottom: .25em;
   }
 
   .title {
     margin: 0;
+    text-transform: none;
+    font-style: italic;
   }
 
   .tabs-title {
