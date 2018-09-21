@@ -14,31 +14,32 @@ order: 3
     </div>
   </div>
 </div>
-<div class="row column" style="height: 35vh; background-color: #252525; display: flex; justify-content: center; align-items: center;">
+<div class="row column" style="height: 35vh; min-height: 252px; background-color: #252525; display: flex; justify-content: center; align-items: center;">
   <div style="text-align: center; color: white;">
     <h3>Our 2019 competition subs</h3>
     <h1><b>Odysseus & Ajax</b></h1>
     <p>Coming soon</p>
   </div>
 </div>
-
-<div class="grid-container" style="padding-top: 50px;">
-    <div class="grid-x">
-        <div class="cell small-10 small-offset-1" style="text-align: center;">
-            <h3>Our 2018 competition subs</h3>
-            <h1>Two Brothers <b>Castor & Pollux</b></h1>
-            <img src="{{ "/assets/images/artemisapollo.png" | relative_url }}" alt='Photo' style='width:90%;position:relative;' usemap='#submap' id="artemispic">
-        </div>
-    </div>
-    <div class="grid-x">
-        <div class="cell small-10 small-offset-1">
-          <p>
-            CUAUV pioneered the AUVSI competition in 2016 by building not one but <i>two</i> subs, Thor and Loki. We continue this proud tradition with our brand new vehicles Castor and Pollux. Castor and Pollux were demigods and the patron saints of sailors. With CUAUV, Castor and Pollux will return to the seas at AUVSI summer 2018.
-          </p>
-        </div>
-    </div>
+<div class="row column" style="background-image: url('/assets/images/castor-pollux-background.png'); background-position: center; background-size: cover;">
+  <div class="grid-container" style="padding-top: 50px;">
+      <div class="grid-x">
+          <div class="cell small-10 small-offset-1" style="text-align: center;">
+              <h3>Our 2018 competition subs</h3>
+              <h1>Two Brothers <b>Castor & Pollux</b></h1>
+              <img src="{{ "/assets/images/castor-pollux.png" | relative_url }}" alt='Photo' style='width:90%;position:relative;' usemap='#submap' id="artemispic">
+          </div>
+      </div>
+      <div class="grid-x">
+          <div class="cell small-10 small-offset-1">
+            <p>
+              CUAUV pioneered the AUVSI competition in 2016 by building not one but <i>two</i> subs, Thor and Loki. We continue this proud tradition with our brand new vehicles Castor and Pollux. Castor and Pollux were demigods and the patron saints of sailors. With CUAUV, Castor and Pollux will return to the seas at AUVSI summer 2018.
+            </p>
+          </div>
+      </div>
+  </div>
 </div>
-<div class="grid-container" style="padding-top: 50px;">
+<!--<div class="grid-container" style="padding-top: 50px;">
   <div class="grid-x">
     <div class="cell small-4 small-offset-4">
       <ul class="tabs" data-tabs id="subs">
@@ -70,7 +71,13 @@ order: 3
         <div class="cell small-5 small-offset-1" style="display: flex; justify-content: center; align-items: center;">
           <div class="center-vertical">
             <h4><b>What's New</b></h4>
-            <p>Some stuff about how great Castor is a how much better everything is</p>
+            <ul>
+              <li>Real Time Dynamic Thrust Vectoring</li>
+              <li>Modular Quick-Access PCB Backplane</li>
+              <li>Modular Hot-Swappable Battery Pods</li>
+              <li>Modular Bulkhead Panels</li>
+              <li>6 Degrees of Freedom</li>
+            </ul>
             <h4><b>Specs</b></h4>
             <ul>
               <li>Weight:</li>
@@ -114,11 +121,11 @@ order: 3
       </div>
     </div>
   </div>
-</div>
+</div>-->
 <div class="grid-container" style="padding-top: 50px; text-align: center;">
   <div class="grid-x">
     <div class="cell small-10 small-offset-1">
-      <h2><b>Our Technologies</b></h2><br>
+      <h2><b>Our Technologies</b></h2>
       <p>Take a look under the hood at the tech that power our subs</p>
     </div>
   </div>
@@ -129,12 +136,12 @@ order: 3
     <div class="cell small-12">
       <ul class="tabs" data-tabs id="tech" style="border:none;">
         <li class="tabs-title" style="width: 33%; text-align: center;">
-          <a data-tabs-target="vision" href="#vision" style="padding: 0;">
+          <a data-tabs-target="Software" href="#Software" style="padding: 0;">
             <div class="cell small-12 medium-6 large-4 columns"">
               <div class="card" style="height: 300px">
                 <div class="card-section" style="display: flex; align-items: center;">
                   <div style="text-align: left;">
-                    <h3>Vision System</h3>
+                    <h3>Software</h3>
                     <h5>Let there be sight</h5>
                   </div>
                 </div>
@@ -143,12 +150,12 @@ order: 3
           </a>
         </li>
         <li class="tabs-title" style="width: 33%; text-align: center;">
-          <a data-tabs-target="frame" href="#frame" style="padding: 0;">
+          <a data-tabs-target="Mechanical" href="#Mechanical" style="padding: 0;">
             <div class="cell small-12 medium-6 large-4 columns">
               <div class="card" style="height: 300px">
                 <div class="card-section" style="display: flex; align-items: center;">
                   <div style="text-align: left;">
-                    <h3>Vehicle Hull</h3>
+                    <h3>Mechanical</h3>
                     <h5>Contents Under Pressure</h5>
                   </div>
                 </div>
@@ -157,13 +164,13 @@ order: 3
           </a>
         </li>
         <li class="tabs-title" style="width: 33%; text-align: center;">
-          <a data-tabs-target="electrical" href="#electrical" style="padding: 0;">
+          <a data-tabs-target="Electrical" href="#Electrical" style="padding: 0;">
             <div class="cell small-12 medium-6 large-4 columns">
               <div class="card" style="height: 300px">
                 <div class="card-section" style="display: flex; align-items: center;">
                   <div style="text-align: left;">
-                    <h3>Electric Zoo</h3>
-                   <h5>Something clever about electrical</h5>
+                    <h3>Electrical</h3>
+                   <h5>Something clever about Electrical</h5>
                   </div>
                 </div>
               </div>
@@ -175,36 +182,36 @@ order: 3
   </div>
 </div>
 <div class="tabs-content" data-tabs-content="tech">
-  <div class="tabs-panel" id="vision">
-    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8;">
-        <div class="cell large-4 large-offset-2 small-6">
-          <h1>Vision System</h1>
+  <div class="tabs-panel" id="Software">
+    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8; height: 50vh;">
+        <div class="cell large-4 large-offset-2 small-6" style="padding-top: 18px; padding-bottom: 18px;">
+          <h1>Software System</h1>
           <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>        
         </div>
-        <div class="cell auto" style="background-color: #252525;">
+        <div class="cell auto" style="background-color: #252525; height: 100%; margin-right: 0;">
           
         </div>
     </div>
 
   </div>
-  <div class="tabs-panel" id="frame">
-    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8;">
-      <div class="cell large-4 large-offset-2 small-6">
-        <h1>Frame</h1>
+  <div class="tabs-panel" id="Mechanical">
+    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8; height: 50vh;">
+      <div class="cell large-4 large-offset-2 small-6" style="padding-top: 18px; padding-bottom: 18px;">
+        <h1>Mechanical</h1>
         <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
       </div>
-      <div class="cell auto" style="background-color: #252525;">
+      <div class="cell auto" style="background-color: #252525; height: 100%; margin-right: 0;">
           
       </div>
     </div>
   </div>
-  <div class="tabs-panel" id="electrical">
-    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8;">
-      <div class="cell large-4 large-offset-2 small-6">
+  <div class="tabs-panel" id="Electrical">
+    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8; height: 50vh;">
+      <div class="cell large-4 large-offset-2 small-6" style="padding-top: 18px; padding-bottom: 18px;">
         <h1>Electrical</h1>
         <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
       </div>
-      <div class="cell auto" style="background-color: #252525;">
+      <div class="cell auto" style="background-color: #252525; height: 100%; margin-right: 0;">
         
       </div>
     </div>
