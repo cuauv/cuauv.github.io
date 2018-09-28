@@ -4,10 +4,27 @@ title: Vehicles
 permalink: /vehicles
 order: 3
 ---
-
-<script>
-
-</script>
+<style>
+  #future-subs-banner{
+    height: 35vh;
+    min-height: 252px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #castor-pollux{
+    background-image: url('/assets/images/castor-pollux-background.png');
+    background-position: center; background-size: cover;
+  }
+  .subteam{
+    width: 33%;
+    text-align: center;
+  }
+  .grid-container.centered{
+    
+  }
+</style>
 
 <!-- Page Content -->
 <div class="about-header">
@@ -18,14 +35,14 @@ order: 3
     </div>
   </div>
 </div>
-<div class="row column" style="height: 35vh; min-height: 252px; background-color: #252525; display: flex; justify-content: center; align-items: center;">
+<div class="row column" id="future-subs-banner">
   <div style="text-align: center; color: white;">
     <h3>Our 2019 competition subs</h3>
     <h1><b>Odysseus & Ajax</b></h1>
     <p>Coming soon</p>
   </div>
 </div>
-<div class="row column" style="background-image: url('/assets/images/castor-pollux-background.png'); background-position: center; background-size: cover;">
+<div class="row column" id="castor-pollux" style="">
   <div class="grid-container" style="padding-top: 50px;">
       <div class="grid-x">
           <div class="cell small-10 small-offset-1" style="text-align: center;">
@@ -126,7 +143,7 @@ order: 3
     </div>
   </div>
 </div>-->
-<div class="grid-container" style="padding-top: 50px; text-align: center;">
+<div class="grid-container centered" style="padding-top: 50px; text-align: center;">
   <div class="grid-x">
     <div class="cell small-10 small-offset-1">
       <h2><b>Our Technologies</b></h2>
@@ -139,7 +156,7 @@ order: 3
   <div class="grid-x">
     <div class="cell small-12">
       <ul class="tabs" data-tabs id="tech" style="border:none;">
-        <li class="tabs-title" style="width: 33%; text-align: center;">
+        <li class="tabs-title subteam">
           <a data-tabs-target="Software" href="#Software" style="padding: 0;">
             <div class="card" style="height: 300px">
               <div class="card-section" style="display: flex; align-items: center;">
@@ -151,7 +168,7 @@ order: 3
             </div>
           </a>
         </li>
-        <li class="tabs-title" style="width: 33%; text-align: center;">
+        <li class="tabs-title subteam">
           <a data-tabs-target="Mechanical" href="#Mechanical" style="padding: 0;">
             <div class="card" style="height: 300px">
               <div class="card-section" style="display: flex; align-items: center;">
@@ -163,7 +180,7 @@ order: 3
             </div>
           </a>
         </li>
-        <li class="tabs-title" style="width: 33%; text-align: center;">
+        <li class="tabs-title subteam">
           <a data-tabs-target="Electrical" href="#Electrical" style="padding: 0;">
             <div class="card" style="height: 300px">
               <div class="card-section" style="display: flex; align-items: center;">
