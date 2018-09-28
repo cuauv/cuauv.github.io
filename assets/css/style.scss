@@ -11,147 +11,137 @@
 /*** General Styling ***/
 
 .inherit-size {
-  width: inherit;
-  height: inherit;
+    width: inherit;
+    height: inherit;
 }
 
 .fixed {
-  position: fixed;
-  z-index: 5;
+    position: fixed;
+    z-index: 5;
 }
 
 a {
-  color: #E42129;
-  font-weight: 500;
+    color: #E42129;
+    font-weight: 500;
 }
 
+.wide-container {
+    @include xy-grid-container(80%, $grid-container-padding);
+}
 
-/***About Us Styling ***/
+/*** About Us Styling ***/
 
 .center-container {
-  @include xy-grid-container(rem-calc(800), $grid-container-padding);
+    @include xy-grid-container(rem-calc(800), $grid-container-padding);
 }
 
 .about-header {
-  width: 100vw;
-  height: 50vh;
-  background-color: black;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
 
-  img {
-    position: absolute;
-    object-fit: cover;
-    opacity: .5;
-  }
+    img {
+        position: absolute;
+        object-fit: cover;
+        opacity: .5;
+    }
 
-  h1 {
-    position: relative;
-    font-weight: 500;
-    color: #fff;
-  }
+    h1 {
+        position: relative;
+        font-weight: 500;
+        color: #fff;
+    }
 }
 
 .about-card {
-  padding-top: 4em;
-  padding-bottom: 4em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 
+<<<<<<< HEAD
   &.dark {
     background-color: #fcfcfc;
   }
+=======
+    &.dark {
+        background-color: #fafafa
+    }
+>>>>>>> master
 
-  h2 {
-    letter-spacing: 0;
-    margin-bottom: 2em;
-    color: #B8B8B8;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1rem;
-  }
+    h2 {
+        letter-spacing: 0;
+        margin-bottom: 2em;
+        color: #B8B8B8;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
 
-  h3 {
-    font-family: "Merriweather", serif;
-    letter-spacing: 0;
-    margin-bottom: 0;
-    color: #222;
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
+    h3 {
+        font-family: "Merriweather", serif;
+        letter-spacing: 0;
+        margin-bottom: 0;
+        color: #222;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
 
-  h4 {
-    letter-spacing: 0;
-    margin-bottom: 1em;
-    color: #222;
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
+    h4 {
+        letter-spacing: 0;
+        margin-bottom: 1em;
+        color: #222;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
 
-  h5 {
-    font-family: "Merriweather", serif;
-    letter-spacing: 0;
-    margin-bottom: 0;
-    color: #222;
-    font-weight: 300;
-  }
+    h5 {
+        font-family: "Merriweather", serif;
+        letter-spacing: 0;
+        margin-bottom: 0;
+        color: #222;
+        font-weight: 300;
+    }
 
-  .strong-text {
-    color: #E42129;
-  }
+    .strong-text {
+        color: #E42129;
+    }
 }
 
 .about-compact {
-  margin-bottom: -2em;
-  padding-top: 4em;
+    margin-bottom: -2em;
+    padding-top: 4em;
 
-  h3 {
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: .1em;
-  }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
 }
 
 .about-tabs {
-  .tabs, .tabs-content {
-    border: none;
+    .tabs, .tabs-content {
+        border: none;
 
-    h3 {
-      margin-bottom: 1em;
+        h3 {
+            margin-bottom: 1em;
+        }
     }
-  }
 
-  button {
-    display: inline-block;
-    padding: 1em 1.5em;
-    color: $black;
-    letter-spacing: .1rem;
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-top: 1em;
-    border: 1px solid $black;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-
-  button:focus {
-    outline: 0;
-  }
-
-  .headshot {
-    text-align: center;
-    padding: 0.5em;
-    margin-bottom: 1em;
-  }
-
-  .avatar {
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 312px;
-      object-fit: cover;
+    button {
+        display: inline-block;
+        padding: 1em 1.5em;
+        color: $black;
+        letter-spacing: .1rem;
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 1em;
+        border: 1px solid $black;
+        border-radius: 50px;
+        cursor: pointer;
     }
-  }
 
+<<<<<<< HEAD
   .name {
     color: $black;
     margin-top: 1em;
@@ -163,31 +153,62 @@ a {
     text-transform: none;
     font-style: italic;
   }
-
-  .tabs-title {
-    text-transform: uppercase;
-
-    a {
-      font-size: 1.25rem;
-      color: $medium-gray;
-      padding-left: 0;
-      padding-right: 3em;
-      margin-bottom: 2em;
-      outline: none;
-
-      &:focus, &:hover {
-        color: $black;
-      }
-
-      &[aria-selected='true'] {
-        color: $primary-color;
-      }
+=======
+    button:focus {
+        outline: 0;
     }
-  }
 
-  .tabs-panel {
-    padding: 0;
-  }
+    .headshot {
+        text-align: center;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+>>>>>>> master
+
+    .avatar {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 312px;
+            object-fit: cover;
+        }
+    }
+
+    .name {
+        color: $black;
+        margin-top: 1em;
+        margin-bottom: .5em;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .tabs-title {
+        text-transform: uppercase;
+
+        a {
+            font-size: 1.25rem;
+            color: $medium-gray;
+            padding-left: 0;
+            padding-right: 3em;
+            margin-bottom: 2em;
+            outline: none;
+
+            &:focus, &:hover {
+                color: $black;
+            }
+
+            &[aria-selected='true'] {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .tabs-panel {
+        padding: 0;
+    }
 }
 
 // /***Vehicles Styling ***/
@@ -237,8 +258,8 @@ a {
 // }
 
 // #vehicles img {
-// 	transition: all .2s ease-in-out;
-// 	filter: blur(0);
+//  transition: all .2s ease-in-out;
+//  filter: blur(0);
 // }
 
 // #vehicles img {
@@ -246,8 +267,8 @@ a {
 // }
 
 // #vehicles img:hover {
-// 	transform: scale(1.05);
-// 	filter: blur(0);
+//  transform: scale(1.05);
+//  filter: blur(0);
 // }
 
 // .badge {
@@ -302,7 +323,7 @@ a {
 // }
 
 // .hover10 figure img {
-// 	opacity: 0.7;
+//  opacity: 0.7;
 //     -webkit-filter: grayscale(5%) blur(0px);
 //     filter: grayscale(5%) blur(0px);
 //     /*-webkit-animation:spin 4s linear infinite;
@@ -311,7 +332,7 @@ a {
 
 // }
 // .hover10 figure:hover img {
-// 	opacity: 0.4;
+//  opacity: 0.4;
 //     -webkit-filter: grayscale(50%) blur(1px);
 //     filter: grayscale(50%) blur(1px);
 //     /*-webkit-transition: .3s ease-in-out;
@@ -487,7 +508,7 @@ a {
 
 // @media (max-width:499px){
 
-// 	#hero {
+//  #hero {
 //     text-align: center;
 //     margin-top: -80px;
 //     background: url("{{ "/assets/images/artemisapollo.png" | relative_url }}") no-repeat bottom center;
@@ -575,37 +596,43 @@ a {
 
 /*** Header Stylings ***/
 
+$site-top-bar-height: 75px;
+
+body {
+    padding-top: $site-top-bar-height;
+}
+
 .top-bar.fixed {
-  width: 100%;
-  background-color: #252525;
-  color: #E42129;
-  // box-shadow: rgb(219, 219, 219) 0px 3px 6px 0px;
+    margin-top: -$site-top-bar-height;
+    width: 100%;
+    background-color: #252525;
+    color: #E42129;
 
-  a {
-    color: $medium-gray;
-  }
+    a {
+        color: $medium-gray;
 
-  a:hover {
-    color: $white;
-  }
+        &:hover {
+            color: $white;
+        }
+    }
 }
 
 $site-logo-height: 40px;
 
 .site-logo {
-  height: $site-logo-height;
-
-  .site-logo-text {
-    position: absolute;
-    z-index: 10;
     height: $site-logo-height;
-  }
 
-  .site-logo-prop {
-    position: absolute;
-    z-index: 10;
-    height: $site-logo-height;
-    left: 83.5px;
-  }
+    .site-logo-text {
+        position: absolute;
+        z-index: 10;
+        height: $site-logo-height;
+    }
+
+    .site-logo-prop {
+        position: absolute;
+        z-index: 10;
+        height: $site-logo-height;
+        left: 83.5px;
+    }
 
 }

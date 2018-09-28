@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="wide-container">
+    <div class="grid-x">
+        <div class="cell shrink">
+            <h1>Follow Our Journey</h1>
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="cell medium-9">
+            <h3> Latest News </h3>
+            {{ content }}
+        </div>
+        <div class="cell medium-3">
+            <h3> Social Media </h3>
+            <a class="twitter-timeline" href="https://twitter.com/CUAUV" data-widget-id="650369453193076740">Tweets by @CUAUV</a>
+            <br/>
+            <h4>Insagram</h4>
+            <div id="instafeed"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+ !function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0],
+         p = /^http:/.test(d.location) ? 'http' : 'https';
+     if (!d.getElementById(id)) {
+         js = d.createElement(s);
+         js.id = id;
+         js.src = p + "://platform.twitter.com/widgets.js";
+         fjs.parentNode.insertBefore(js, fjs);
+     }
+ }(document, "script", "twitter-wjs");
+</script>
+
+<script src="/assets/js/instafeed.min.js"></script>
+
+<script type="text/javascript">
+ var userFeed = new Instafeed({
+     get: 'user',
+     userId: 2191060614,
+     accessToken: '2191060614.e899d1b.a5970a9d29894bb19ce10b7574fea07c',
+     sortBy: 'most-recent',
+     limit: 3,
+     template: {% raw %} '<a href="{{link}}" target="_blank"><img src="{{image}}" width=100%" /></a>', {% endraw %}
+     resolution: 'standard_resolution'
+ });
+ userFeed.run();
+</script>
