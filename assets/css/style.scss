@@ -57,9 +57,15 @@ a {
     padding-top: 4em;
     padding-bottom: 4em;
 
+<<<<<<< HEAD
+  &.dark {
+    background-color: #fcfcfc;
+  }
+=======
     &.dark {
         background-color: #fafafa
     }
+>>>>>>> master
 
     h2 {
         letter-spacing: 0;
@@ -135,6 +141,19 @@ a {
         cursor: pointer;
     }
 
+<<<<<<< HEAD
+  .name {
+    color: $black;
+    margin-top: 1em;
+    margin-bottom: .25em;
+  }
+
+  .title {
+    margin: 0;
+    text-transform: none;
+    font-style: italic;
+  }
+=======
     button:focus {
         outline: 0;
     }
@@ -144,6 +163,7 @@ a {
         padding: 0.5em;
         margin-bottom: 1em;
     }
+>>>>>>> master
 
     .avatar {
         overflow: hidden;
