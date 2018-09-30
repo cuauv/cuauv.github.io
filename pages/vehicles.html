@@ -22,7 +22,42 @@ order: 3
     text-align: center;
   }
   .grid-container.centered{
-    
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .subteam-image{
+    background-color: #252525;
+    height: 100%;
+    margin-right: 0;
+  }
+  .subteam-section{
+    background-color: #F8F8F8;
+    height: 50vh;
+  }
+  .subteam-text{
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .card.sub{
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 300px;
+  }
+  .card.sub .card-divider{
+    background: none;
+    text-align: center;
+  }
+  .card.sub .card-divider.winner{
+    color: red;
+  }
+  .card.sub .card-section{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .card.sub img{
+    height: 130px;
   }
 </style>
 
@@ -60,90 +95,8 @@ order: 3
       </div>
   </div>
 </div>
-<!--<div class="grid-container" style="padding-top: 50px;">
-  <div class="grid-x">
-    <div class="cell small-4 small-offset-4">
-      <ul class="tabs" data-tabs id="subs">
-        <li class="tabs-title is-active" style="width: 50%; text-align: center;">
-          <a href="#castor" aria-selected="true">Castor</a>
-        </li>
-        <li class="tabs-title" style="width: 50%; text-align: center;">
-          <a data-tabs-target="pollux" href="#pollux">Pollux</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
 
-<div class="tabs-content" data-tabs-content="subs">  
-  <div class="tabs-panel is-active" id="castor">
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell small-4 small-offset-4" style="text-align: center;">
-          <h1>Castor</h1>
-        </div>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell small-6" style="display: flex; justify-content: center; align-items: center;">
-          <img src="{{ "/assets/images/Top-castor.png" | relative_url }}" alt='Photo' style='width:80%; max-width: 360px;' usemap='#submap' id="artemispic" />
-        </div>
-        <div class="cell small-5 small-offset-1" style="display: flex; justify-content: center; align-items: center;">
-          <div class="center-vertical">
-            <h4><b>What's New</b></h4>
-            <ul>
-              <li>Real Time Dynamic Thrust Vectoring</li>
-              <li>Modular Quick-Access PCB Backplane</li>
-              <li>Modular Hot-Swappable Battery Pods</li>
-              <li>Modular Bulkhead Panels</li>
-              <li>6 Degrees of Freedom</li>
-            </ul>
-            <h4><b>Specs</b></h4>
-            <ul>
-              <li>Weight:</li>
-              <li>Width:</li>
-              <li>Length:</li>
-              <li>Height:</li>
-              <li>Max Speed:</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="tabs-panel" id="pollux">
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell small-4 small-offset-4" style="text-align: center;">
-          <h1>Pollux</h1>
-        </div>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell small-6" style="display: flex; justify-content: center; align-items: center;">
-          <img src="{{ "/assets/images/Top-pollux.png" | relative_url }}" alt='Photo' style='width:70%; max-width: 360px;' usemap='#submap' id="artemispic" />
-        </div>
-        <div class="cell small-5 small-offset-1" style="display: flex; justify-content: center; align-items: center;">
-          <div class="center-vertical">
-            <h4><b>What's New</b></h4>
-            <p>Some stuff about how great Castor is a how much better everything is</p>
-            <h4><b>Specs</b></h4>
-            <ul>
-              <li>Weight:</li>
-              <li>Width:</li>
-              <li>Length:</li>
-              <li>Height:</li>
-              <li>Max Speed:</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-<div class="grid-container centered" style="padding-top: 50px; text-align: center;">
+<div class="grid-container centered">
   <div class="grid-x">
     <div class="cell small-10 small-offset-1">
       <h2><b>Our Technologies</b></h2>
@@ -152,7 +105,7 @@ order: 3
   </div>
 </div>
 
-<div class="grid-container" style="padding-top: 50px; padding-left: 0; padding-right: 0;">
+<div class="grid-container centered">
   <div class="grid-x">
     <div class="cell small-12">
       <ul class="tabs" data-tabs id="tech" style="border:none;">
@@ -198,43 +151,37 @@ order: 3
 </div>
 <div class="tabs-content" data-tabs-content="tech">
   <div class="tabs-panel" id="Software">
-    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8; height: 50vh;">
-        <div class="cell large-4 large-offset-2 small-6" style="padding-top: 18px; padding-bottom: 18px;">
+    <div class="grid-x grid-margin-x subteam-section">
+        <div class="cell large-4 large-offset-2 small-6 subteam-text">
           <h1>Software System</h1>
           <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>        
         </div>
-        <div class="cell auto" style="background-color: #252525; height: 100%; margin-right: 0;">
-          
-        </div>
+        <div class="cell auto subteam-image"></div>
     </div>
 
   </div>
   <div class="tabs-panel" id="Mechanical">
-    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8; height: 50vh;">
-      <div class="cell large-4 large-offset-2 small-6" style="padding-top: 18px; padding-bottom: 18px;">
+    <div class="grid-x grid-margin-x subteam-section">
+      <div class="cell large-4 large-offset-2 small-6 subteam-text">
         <h1>Mechanical</h1>
         <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
       </div>
-      <div class="cell auto" style="background-color: #252525; height: 100%; margin-right: 0;">
-          
-      </div>
+      <div class="cell auto subteam-image"></div>
     </div>
   </div>
   <div class="tabs-panel" id="Electrical">
-    <div class="grid-x grid-margin-x" style="background-color: #F8F8F8; height: 50vh;">
-      <div class="cell large-4 large-offset-2 small-6" style="padding-top: 18px; padding-bottom: 18px;">
+    <div class="grid-x grid-margin-x subteam-section">
+      <div class="cell large-4 large-offset-2 small-6 subteam-text">
         <h1>Electrical</h1>
         <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
       </div>
-      <div class="cell auto" style="background-color: #252525; height: 100%; margin-right: 0;">
-        
-      </div>
+      <div class="cell auto subteam-image"></div>
     </div>
   </div>
 </div>
 
-<div class="row column" style="background-position: center; background-size: cover;">
-  <div class="grid-container" style="padding-top: 50px;">
+<div class="row column">
+  <div class="grid-container centered">
       <div class="grid-x">
           <div class="cell small-10 small-offset-1" style="text-align: center;">
               <h3>Our previous competition subs</h3>
@@ -244,112 +191,120 @@ order: 3
       <div class="grid-x">
           <div class="cell small-10 small-offset-1">
             <div class="previous-subs">
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2017</h4>
+                  <h4><strong>2017</strong></h4>
                 </div>
                 <img src="assets/images/2017">
                 <div class="card-section">
-                  <p>Artemis & Apollo</p>
+                  <h5>Artemis & Apollo</h5>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2016</h4>
+                  <h4><strong>2016</strong></h4>
                 </div>
                 <img src="assets/images/2016.png">
                 <div class="card-section">
-                  <p>Thor & Loki</p>
+                  <h5>Thor & Loki</h5>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2015</h4>
+                  <h4><strong>2015</strong></h4>
                 </div>
                 <img src="assets/images/2015.png">
                 <div class="card-section">
-                  <p>Argo</p>
+                  <h5>Argo</h5>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
-                <div class="card-divider">
-                  <h4>2014</h4>
+              <div class="card sub">
+                <div class="card-divider winner">
+                  <h4><strong>2014</strong></h4>
                 </div>
                 <img src="assets/images/2014.png">
                 <div class="card-section">
-                  <p>Gemini</p>
+                  <h5>Gemini</h5>
+                  <p><i>Robosub Champion</i></p>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
-                <div class="card-divider">
-                  <h4>2013</h4>
+              <div class="card sub">
+                <div class="card-divider winner">
+                  <h4><strong>2013</strong></h4>
                 </div>
                 <img src="assets/images/2013.png">
                 <div class="card-section">
-                  <p>Ragnorok</p>
+                  <h5>Ragnorok</h5>
+                  <p><i>Robosub Champion</i></p>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
-                <div class="card-divider">
-                  <h4>2012</h4>
+              <div class="card sub">
+                <div class="card-divider winner">
+                  <h4><strong>2012</strong></h4>
                 </div>
                 <img src="assets/images/2012.png">
                 <div class="card-section">
-                  <p>Killick</p>
+                  <h5>Killick</h5>
+                  <p><i>Robosub Champion</i></p>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2011</h4>
+                  <h4><strong>2011</strong></h4>
                 </div>
                 <img src="assets/images/2011.png">
                 <div class="card-section">
-                  <p>Drekar</p>
+                  <h5>Drekar</h5>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
-                <div class="card-divider">
-                  <h4>2010</h4>
+              <div class="card sub">
+                <div class="card-divider winner">
+                  <h4><strong>2010</strong></h4>
                 </div>
                 <img src="assets/images/2010.png">
                 <div class="card-section">
-                  <p>Tachyon</p>
+                  <h5>Tachyon</h5>
+                  <p><i>Robosub Champion</i></p>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
-                <div class="card-divider">
-                  <h4>2009</h4>
+              <div class="card sub">
+                <div class="card-divider winner">
+                  <h4><strong>2009</strong></h4>
                 </div>
                 <img src="assets/images/2009.png">
                 <div class="card-section">
-                  <p>Nova</p>
+                  <h5>Nova</h5>
+                  <p><i>Robosub Champion</i></p>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2008</h4>
+                  <h4><strong>2008</strong></h4>
                 </div>
                 <img src="assets/images/2008.jpg">
                 <div class="card-section">
-                  <p>Triton</p>
+                  <h5>Triton</h5>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2007</h4>
+                  <h4><strong>2007</strong></h4>
                 </div>
                 <img src="assets/images/2007.jpg">
                 <div class="card-section">
-                  <p>Proteus</p>
+                  <h5>Proteus</h5>
                 </div>
               </div>
-              <div class="card" style="width: 300px; height: 300px;">
+              <div class="card sub">
                 <div class="card-divider">
-                  <h4>2006</h4>
+                  <h4><strong>2006</strong></h4>
+                </div>
+                <div>
+
                 </div>
                 <img src="assets/images/2006.jpg">
                 <div class="card-section">
-                  <p>Seamonkey</p>
+                  <h5>Seamonkey</h5>
                 </div>
               </div>
             </div>
