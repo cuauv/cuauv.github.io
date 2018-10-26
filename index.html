@@ -1,125 +1,49 @@
----
+<!DOCTYPE html>
+<html lang="en">
 
-layout: default
----
+<head>
 
-<div class="grid-container">
-    <div class="grid-y align-center text-center">
-        <div class="cell shrink">
-            <h2>Introducing</h2>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>CUAUV</title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/62036b53a1.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../favicon.svg">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="row">
+        <div class="twelve columns">
+          <h1>Cornell University</h1>
         </div>
-        <div class="cell shrink">
-            <h2>Castor &amp; Pollux</h2>
+        <div class="twelve columns">
+          <h1>Autonomous Underwater Vehicle</h1>
         </div>
-    </div>
-</div>
-
-<div class="about-card">
-  <div class="grid-container">
-    <div class="grid-x align-justify">
-      <div class="cell small-5">
-        <h4>2 New Vehicles</h4>
-        <h5>CUAUV’s autonomous underwater vehicles are a testament to our team’s engineering excellence. Each year we build upon our past vehicles and develop two entirely new AUVs to simultaneously complete the AUVSI RoboSub course.</h5>
-      </div>
-      <div class="cell small-6">
-        <img src="{{ "/assets/images/vehicle.png" | relative_url }}"/>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="about-card">
-  <div class="grid-container">
-    <div class="grid-x align-justify">
-      <div class="cell small-6">
-        <img src="{{ "/assets/images/championship.png" | relative_url }}"/>
-      </div>
-      <div class="cell small-5">
-        <h4>7 Championships</h4>
-        <h5>As a seven-time RoboSub champion, CUAUV embodies a tradition of excellence and continuously pushes the envelope of autonomous underwater vehicle technology.</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="about-card">
-  <div class="grid-container">
-    <div class="grid-x align-justify">
-      <div class="cell small-5">
-        <h4>Diverse Team</h4>
-        <h5>CUAUV is entirely undergraduate-run, consisting of over 40 students spanning 8 diverse academic disciplines. We are divided into 4 subteams: Software, Mechanical, Electrical, and Business.</h5>
-      </div>
-      <div class="cell small-6">
-        <img src="{{ "/assets/images/diversity.jpg" | relative_url }}"/>
-    </div>
-    </div>
-  </div>
-</div>
-
-<div class="about-compact">
-  <div class="center-container">
-    <div class="grid-x grid-padding-x align-center-middle">
-      <div class="cell shrink">
-        <h3>Outreach</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="about-card">
-  <div class="center-container">
-    <div class="grid-x">
-      <div class="cell shrink">
-        <h2>Description</h2>
-      </div>
-    </div>
-    <div class="grid-x">
-      <div class="cell">
-        <h3>Along with hosting lab tours with visiting companies, we organize multiple outreach events to better acquaint the greater Cornell and Ithaca communities with our team and our sponsors. Along with lab tours to visiting schools and organizations, we visit local elementary, middle and high schools for various STEM events.</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid-container">
-    <div class="grid-x grid-padding-x">
-        <div class="cell medium-6">
-            <div class="grid-y grid-padding-y">
-                <div class="cell">
-                    Latest News
-                </div>
-
-                {% for post in site.posts limit:3 %}
-                <div class="cell">
-                    <div class="grid-x">
-                        <div class="cell auto">
-                            <a href="{{ post.url | relative_url }}" target="_blank" style="font-size:22px">{{ post.title | escape }}</a>
-                        </div>
-                        <div class="cell shrink">
-                            {{ post.date | date_to_string }}
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
+        <div class="twelve columns">
+          <h3>Coming Soon.</h3>
         </div>
-        <div class="cell medium-6">
-            <div class="grid-x grid-padding-x">
-                <div class="cell">Follow Us on Social Media</div>
-                <div class="cell medium-6">
-                    <div id="instafeed"></div>
-                </div>
-                <div class="cell medium-6">
-                    <a class="twitter-timeline" href="https://twitter.com/CUAUV" data-widget-id="650475321880350720">Tweets by @CUAUV</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+</body>
 
-<script>
- //Gets Twitter Feed
- !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-     if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-         fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script>
+</html>
