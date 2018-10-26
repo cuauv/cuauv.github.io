@@ -6,6 +6,7 @@
 @import 'foundation_settings';
 @import 'foundation/foundation';
 @include foundation-everything;
+@include hamburger($color, $color-hover, $width, $height, $weight, $bars);
 
 
 /*** General Styling ***/
