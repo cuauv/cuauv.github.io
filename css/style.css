@@ -7,3 +7,34 @@ body {
   padding-top: 24em;
   padding-bottom: 8em;
 }
+
+/* FOOTER STYLING */
+.footer{
+  height: auto;
+  padding: 20px;
+	width: 100%;
+  background-color: #1C1C1C!important;
+  color: #fff;
+}
+
+.social-media-links{
+  border: none;
+  background: none;
+  padding: 10px 15px;
+}
+
+.icons{
+  font-size: 24px;
+  color: #fff;
+}
+
+#left-copyright{
+  padding: 13px;
+  padding-left: 8%;
+}
+
+#right-social{
+  padding-right: 8%;
+}
+
+/* END FOOTER STYLING */
