@@ -8,6 +8,39 @@ body {
   padding-bottom: 8em;
 }
 
+/* NAVBAR STYLING */
+
+.navbar {
+  background-color: #252525;
+  color: white;
+  padding: 1% 1% 0% 3%;
+  width: 100%;
+}
+
+.navbar img {
+  height: 65px;
+  margin-top:.5%;
+}
+
+.navbar li {
+  list-style: none;
+  display:inline-block;
+  margin-top: 20px;
+}
+
+.navbar li a {
+  color: #B0B0B0;
+  text-decoration: none;
+  font-size: 150%;
+  margin-left: 50px;
+}
+
+.navbar li a:hover {
+  color: white;
+}
+
+/* END NAVBAR STYLING */
+
 /* FOOTER STYLING */
 .footer{
   height: auto;
