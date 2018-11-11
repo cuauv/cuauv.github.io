@@ -176,7 +176,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container" style="padding-top: 24px;">
+	<div class="container" style="padding-top: 24px;" id="prevSubs">
 		<div class="row">
 			<div class="twelve columns" style="text-align: center;">
 				<h3>A Tradition of Excellence <strong><i>Our Past Subs</i></strong></h3>
@@ -189,7 +189,7 @@
 			<div class="ten columns" style="text-align: center;">
 				<ul class="siema">
 					<div class="tabs-title card sub">
-						<a id="sub2017card" class="sub-click" href="#sub2017">
+						<a class="sub-click" onclick="showInfo(17)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2017</strong></h4>
 							</div>
@@ -202,7 +202,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a id="sub2016card" class="sub-click" href="#sub2016">
+						<a class="sub-click" onclick="showInfo(16)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2016</strong></h4>
 							</div>
@@ -215,7 +215,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a id="sub2015card" class="sub-click" href="#sub2015">
+						<a class="sub-click" onclick="showInfo(15)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2015</strong></h4>
 							</div>
@@ -228,7 +228,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a id="sub2015card" class="sub-click" href="#sub2014">
+						<a class="sub-click" onclick="showInfo(14)" href="#prevSubs">
 							<div class="card-divider winner">
 								<h4><strong>2014</strong></h4>
 							</div>
@@ -242,7 +242,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2013">
+						<a class="sub-click" onclick="showInfo(13)" href="#prevSubs">
 							<div class="card-divider winner">
 								<h4><strong>2013</strong></h4>
 							</div>
@@ -256,7 +256,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2012">
+						<a class="sub-click" onclick="showInfo(12)" href="#prevSubs">
 							<div class="card-divider winner">
 								<h4><strong>2012</strong></h4>
 							</div>
@@ -270,7 +270,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2011">
+						<a class="sub-click" onclick="showInfo(11)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2011</strong></h4>
 							</div>
@@ -283,7 +283,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2010">
+						<a class="sub-click" onclick="showInfo(10)" href="#prevSubs">
 							<div class="card-divider winner">
 								<h4><strong>2010</strong></h4>
 							</div>
@@ -297,7 +297,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2009">
+						<a class="sub-click" onclick="showInfo(09)" href="#prevSubs">
 							<div class="card-divider winner">
 								<h4><strong>2009</strong></h4>
 							</div>
@@ -311,7 +311,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2008">
+						<a class="sub-click" onclick="showInfo(08)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2008</strong></h4>
 							</div>
@@ -324,7 +324,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2007">
+						<a class="sub-click" onclick="showInfo(07)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2007</strong></h4>
 							</div>
@@ -337,7 +337,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" href="#sub2006">
+						<a class="sub-click" onclick="showInfo(06)" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2006</strong></h4>
 							</div>
@@ -480,15 +480,11 @@
 	</div>
 	<script>
 		$(".row.sub-info").hide();
-		$(".sub-click").click((event) => {
-			console.log(event.target.id);
-			if(event.target.id == ""){
-				console.log("none");
-				console.log(event.target.parentElement);
-				console.log(event.target.path);
-			}
-			console.log(event);
-		});
+		function showInfo(year) {
+			var id = "#sub20" + year;
+			$(".row.sub-info").hide();
+			$(id).show();
+		}
 		const siema = new Siema({
 			selector: '.siema',
 			duration: 200,
