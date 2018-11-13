@@ -3,14 +3,22 @@ body {
   padding: 0;
 }
 
-.main {
+.center-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* INTRO */
+
+#intro .main {
   padding-top: 16em;
-  padding-bottom: 12em;
-  color: white;
+  padding-bottom: 8em;
 }
 
 #intro {
   background-color: #1c1c1c;
+  color: white;
 }
 
 #intro h5 {
@@ -31,11 +39,44 @@ body {
   width: 100%;
 }
 
-.center-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* INTRO END */
+
+/* CARD */
+
+#card-light {
+  background-color: white;
+  color: #1c1c1c;
 }
+
+#card-light h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#card-light .main {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+#card-dark {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+#card-dark h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#card-dark .main {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+
+/* CARD END */
 
 /* NAVBAR STYLING */
 
