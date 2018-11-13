@@ -16,14 +16,13 @@ body {
 .site-logo-text {
   position: absolute;
   z-index: 10;
-  height: 40px;
+  margin-left: -20px;
 }
 
 .site-logo-prop {
   position: absolute;
   z-index: 10;
-  height: 40px;
-  left: 68px;
+  left: 48px;
 }
 
 h4, h5 {
