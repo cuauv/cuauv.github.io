@@ -9,6 +9,23 @@ body {
   justify-content: center;
 }
 
+.site-logo {
+  height: 40px;
+}
+
+.site-logo-text {
+  position: absolute;
+  z-index: 10;
+  height: 40px;
+}
+
+.site-logo-prop {
+  position: absolute;
+  z-index: 10;
+  height: 40px;
+  left: 68px;
+}
+
 h4, h5 {
   font-family: 'Merriweather', serif;
 }
