@@ -25,7 +25,19 @@ body {
   left: 48px;
 }
 
-h4, h5 {
+@media (max-width: 400px) {
+  .site-logo-prop {
+    left: 67px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .navbar a {
+    display: none;
+  }
+}
+
+h4, h5, h6 {
   font-family: 'Merriweather', serif;
 }
 
@@ -47,6 +59,13 @@ h4, h5 {
   font-weight: 200;
   letter-spacing: .02em;
   margin-bottom: 0.25em;
+}
+
+#intro .intro-desc {
+  font-family: 'Merriweather', serif;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 2em;
 }
 
 #intro h1 {
