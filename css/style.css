@@ -4,35 +4,82 @@ body {
 }
 
 .main {
-  padding-top: 24em;
-  padding-bottom: 8em;
+  padding-top: 16em;
+  padding-bottom: 12em;
+  color: white;
+}
+
+#intro {
+  background-color: #1c1c1c;
+}
+
+#intro h5 {
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: .02em;
+  margin-bottom: 0.25em;
+}
+
+#intro h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#intro img {
+  margin: auto;
+  width: 100%;
+}
+
+.center-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* NAVBAR STYLING */
 
 .navbar {
-  background-color: #252525;
-  color: white;
-  padding: 1% 1% 0% 3%;
+  background-color: #1c1c1c;
+  height: 72px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
+ul, li {
+  margin: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .navbar img {
-  height: 65px;
-  margin-top:.5%;
+  height: 40px;
 }
 
 .navbar li {
   list-style: none;
   display:inline-block;
-  margin-top: 20px;
 }
 
 .navbar li a {
   color: #B0B0B0;
   text-decoration: none;
-  font-size: 150%;
-  margin-left: 50px;
+  font-size: 20px;
+  margin-left: 1em;
 }
 
 .navbar li a:hover {
@@ -42,11 +89,14 @@ body {
 /* END NAVBAR STYLING */
 
 /* FOOTER STYLING */
-.footer{
-  height: auto;
-  padding: 20px;
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 20px 0px;
 	width: 100%;
-  background-color: #1C1C1C!important;
+  background-color: #1C1C1C;
   color: #fff;
 }
 
@@ -59,15 +109,6 @@ body {
 .icons{
   font-size: 24px;
   color: #fff;
-}
-
-#left-copyright{
-  padding: 13px;
-  padding-left: 8%;
-}
-
-#right-social{
-  padding-right: 8%;
 }
 
 /* END FOOTER STYLING */
