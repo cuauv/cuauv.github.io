@@ -112,7 +112,7 @@ h4, h5 {
 
 #end-card .main {
   padding-top: 8em;
-  padding-bottom: 16em;
+  padding-bottom: 12em;
   margin: auto;
 }
 
@@ -186,7 +186,6 @@ ul, li {
 /* FOOTER STYLING */
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   padding: 20px 0px;
