@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+h4, h5 {
+  font-family: 'Merriweather', serif;
+}
+
 /* INTRO */
 
 #intro .main {
@@ -23,6 +27,7 @@ body {
 
 #intro h5 {
   text-transform: uppercase;
+  font-family: 'Helvetica', 'HelveticaNeue', sans-serif;
   font-weight: 200;
   letter-spacing: .02em;
   margin-bottom: 0.25em;
@@ -59,6 +64,16 @@ body {
   padding-bottom: 8em;
 }
 
+#card-light a {
+  color: #5974FF;
+  text-transform: none;
+}
+
+#card-dark a {
+  color: #5974FF;
+  text-transform: none;
+}
+
 #card-dark {
   background-color: #1c1c1c;
   color: white;
@@ -75,8 +90,30 @@ body {
   padding-bottom: 8em;
 }
 
-
 /* CARD END */
+
+/* END CARD */
+
+#end-card .main {
+  padding-top: 8em;
+  padding-bottom: 16em;
+  margin: auto;
+}
+
+#end-card h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#end-card a {
+  color: #5974FF;
+  text-transform: none;
+  text-align: center;
+}
+
+/* END CARD END */
 
 /* NAVBAR STYLING */
 
@@ -117,10 +154,11 @@ ul, li {
 }
 
 .navbar li a {
-  color: #B0B0B0;
+  color: #dbdbdb;
   text-decoration: none;
-  font-size: 20px;
-  margin-left: 1em;
+  letter-spacing: .02em;
+  font-size: 18px;
+  margin-left: 1.2em;
 }
 
 .navbar li a:hover {
