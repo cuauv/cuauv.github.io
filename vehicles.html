@@ -297,7 +297,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" onclick="showInfo(09)" href="#prevSubs">
+						<a class="sub-click" onclick="showInfo('09')" href="#prevSubs">
 							<div class="card-divider winner">
 								<h4><strong>2009</strong></h4>
 							</div>
@@ -311,7 +311,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" onclick="showInfo(08)" href="#prevSubs">
+						<a class="sub-click" onclick="showInfo('08')" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2008</strong></h4>
 							</div>
@@ -324,7 +324,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" onclick="showInfo(07)" href="#prevSubs">
+						<a class="sub-click" onclick="showInfo('07')" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2007</strong></h4>
 							</div>
@@ -337,7 +337,7 @@
 						</a>
 					</div>
 					<div class="tabs-title card sub">
-						<a class="sub-click" onclick="showInfo(06)" href="#prevSubs">
+						<a class="sub-click" onclick="showInfo('06')" href="#prevSubs">
 							<div class="card-divider">
 								<h4><strong>2006</strong></h4>
 							</div>
@@ -482,6 +482,7 @@
 		$(".row.sub-info").hide();
 		function showInfo(year) {
 			var id = "#sub20" + year;
+			console.log(id);
 			$(".row.sub-info").hide();
 			$(id).show();
 		}
