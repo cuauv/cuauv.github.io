@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/62036b53a1.js"></script>
 
@@ -41,8 +42,11 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+	h4 {
+
+	}
 	.announcement {
-		background: #252525;
+		background: #1c1c1c;
 		color: white;
 		padding-top: 24px;
 		padding-bottom: 24px;
@@ -92,10 +96,10 @@
 		text-align: center;
 	}
 	.tabs-title.card.sub h4,.tabs-title.card.sub p{
-		color: #252525;
+		color: #1c1c1c;
 	}
 	.tabs-title.card.sub h5{
-		color: #252525;
+		color: #1c1c1c;
 	}
 	.tabs-title.card.sub .winner h4{
 		color: red;
@@ -109,6 +113,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	p {
+		font-family: 'Merriweather', serif;
+	}
 </style>
 <body>
 	<div class="container margin-less top">
@@ -119,7 +126,7 @@
 	<div class="container margin-less announcement">
 		<div class="row">
 			<div class="twelve columns" style="text-align: center;">
-				<p>Our 2019 Competition Subs</p>
+				<h5>Our 2019 Competition Subs</h5>
 				<h3>Heroes of the Illiad <strong><i>Odysseus & Ajax</i></strong></h3>
 				<h5>Coming Soon</h5>
 			</div>
@@ -128,13 +135,13 @@
 	<div class="container sub-body">
 		<div class="row">
 			<div class="twelve columns" style="text-align: center;">
-				<p>Our 2018 Competition Subs</p>
+				<h5>Our 2018 Competition Subs</h5>
 				<h3>Two Brothers <strong><i>Castor & Pollux</i></strong></h3>
 			</div>
 		</div>
 		<div class="row">
 			<div class="eight columns offset-by-two">
-				<img src="images/castor-pollux.png" style="width: 75%"/>
+				<img src="images/castor-pollux.png" style="width: 100%;"/>
 			</div>
 		</div>
 		<div class="row">
@@ -143,14 +150,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="container margin-less" style="padding-top: 24px; background: #252525;color: white;">
+	<div class="container margin-less" style="padding-top: 24px; background: #1c1c1c;color: white;">
 		<div class="row">
 			<div class="twelve columns" style="text-align: center; padding-bottom: 24px;">
 				<h3>Our Technologies</h3>
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns" style="background: linear-gradient(90deg, rgba(37,37,37,0), rgba(37,37,37,0) 50%, rgba(37,37,37,1) 100%), url('images/mechanical.JPG');background-position: center; background-repeat: no-repeat; background-size: cover; height: 28vw">
+			<div class="six columns" style="background: linear-gradient(90deg, rgba(37,37,37,0), rgba(37,37,37,0) 50%, rgba(28,28,28,1) 100%), url('images/mechanical.JPG');background-position: center; background-repeat: no-repeat; background-size: cover; height: 28vw">
 			</div>
 			<div class="five columns content-half">
 				<h4>Mechanical</h4>
@@ -161,14 +168,14 @@
 		<div class="row">
 			<div class="five columns offset-by-one content-half">
 				<h4>Electrical</h4>
-				<p>The electrical subteams works to connect the software running on the main computer with the rest of the submarine, ensuring efciency with the vehicle’s power, sensor, and mechatronics systems. Team members design, layout, and populate custom printed circuit boards (PCBs), which all connect via an integrated backplane. New improvements have allowed the entire backbone of the submarines to be modular and nearly identical across both vehicles. This improves the functionality and reliability of both machines. Battery management boards allow for reliable monitoring and protection against power spikes. Additionally, the Power over Ethernet (PoE) boards allow for ease of power distribution without the need for a large amount of cables. Lastly, the redesigned hydrophones system includes an active pinger to enable the vehicles to communicate, and an FPGA for onboard signal processing.
+				<p>The electrical subteams works to connect the software running on the main computer with the rest of the submarine, ensuring efciency with the vehicle’s power, sensor, and mechatronics systems. Team members design, layout, and populate custom printed circuit boards (PCBs), which all connect via an integrated backplane. New improvements have allowed the entire backbone of the submarines to be modular and nearly identical across both vehicles. Battery management boards allow for reliable monitoring and protection against power spikes. Redesigned hydrophones system includes an active pinger to enable the vehicles to communicate, and an FPGA for onboard signal processing.
 				</p>
 			</div>
-			<div class="six columns" style="background: linear-gradient(90deg, rgba(37,37,37,1), rgba(37,37,37,0) 50%, rgba(37,37,37,0) 99%), url('images/electrical.JPG');background-position: center; background-repeat: no-repeat; background-size: cover; height: 28vw">
+			<div class="six columns" style="background: linear-gradient(90deg, rgba(28,28,28,1), rgba(37,37,37,0) 50%, rgba(37,37,37,0) 99%), url('images/electrical.JPG');background-position: center; background-repeat: no-repeat; background-size: cover; height: 28vw">
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns" style="background: linear-gradient(90deg, rgba(37,37,37,0), rgba(37,37,37,0) 50%,rgba(37,37,37,1) 99%), url('images/software.jpg');background-position: center; background-repeat: no-repeat; background-size: cover; height: 28vw">
+			<div class="six columns" style="background: linear-gradient(90deg, rgba(37,37,37,0), rgba(37,37,37,0) 50%,rgba(28,28,28,1) 99%), url('images/software.jpg');background-position: center; background-repeat: no-repeat; background-size: cover; height: 28vw">
 			</div>
 			<div class="five columns content-half">
 				<h4>Software</h4>
@@ -356,124 +363,124 @@
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2017">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2017.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2017</h4>
-				<h5>Artemis & Apollo</h5>
+				<h3>Artemis & Apollo</h3>
 				<p>Artemis & Apollo continued on lessons learned from Thor & Loki. Artemis features numerous improvements that make it easier to maneuver and easier to swap parts, such as real time dynamic thrust vectoring, a modular quick-Access PCB backplane, modular hot-swappable battery pods, and modular bulkhead panels.</p>
 				<p>Apollo features a dual inertial sensor fusion, CO2 pneumatically fired torpedoes, modular hot-swappable battery pods, and can have communicate accoustically with Artemis.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2016">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2016.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2016</h4>
-				<h5>Thor & Loki</h5>
+				<h3>Thor & Loki</h3>
 				<p>Thor has a mechanical design that implemented ideas from previous double-hull and single-hull AUV designs. Thor introduces vectored thrusters that can be dynamically repositioned to maximize vehicle speed and maneuverability. It also has sliding electronics racks which allow for better access to the bulkheads and easier electrical integration.</p>
 				<p>This is Loki. Together, Thor and Loki worked in tandem to complete the RoboSub course faster than ever before. Due to Loki’s compact size, we had to rethink the way our AUVs are designed. Loki features a hot swappable battery inside of a single hull design along with a CO2 cartridge actuator system.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2015">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2015.png">
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2015</h4>
-				<h5>Argo</h5>
+				<h3>Argo</h3>
 				<p>CUAUV is proud to present Argo, its 2015 vehicle. Argo improves upon its predecessor in every aspect of its development, with more flexible electrical systems, enhanced user interfaces, and new double hull design to decrease overall size and weight.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2014">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2014.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2014</h4>
-				<h5>Gemini</h5>
+				<h3>Gemini</h3>
 				<p>Gemini is CUAUV's 2013-2014 vehicle, a joint competition and research vehicle. The design focuses on reducing the weight of the vehicle platform while maintaining full competition capabilities, ease of integration and use, and improved control properties. The main improvements include stronger frame structures and pressure vessels, a streamlined electronics system, improved sensor suite, and improved vision algorithms.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2013">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2013.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2013</h4>
- 			   <h5>Ragnarök</h5>
+ 			   	<h3>Ragnarök</h3>
 				<p>Ragnarök is the CUAUV 2012-2013 vehicle, a joint competition and research vehicle. The design focuses on reducing the weight of the vehicle platform while maintaining full competition capabilities, ease of integration and use, control properties, and backwards compatibility. The main improvements include stronger frame structures and pressure vessels, a streamlined electronics system, improved sensor suite, and improved vision algorithms.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2012">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2012.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2012</h4>
- 			   	<h5>Killick</h5>
+ 			   	<h3>Killick</h3>
 				<p>Killick is the CUAUV 2011-2012 vehicle, a joint competition and research vehicle. The design focuses on reducing the size and weight of the vehicle platform while maintaining full competition capabilities and control properties. The main improvements include stronger frame structures and pressure vessels, a streamlined electronics system, improved sensor suite, and improved vision algorithms.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2011">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2011.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2011</h4>
- 			   	<h5>Drekar</h5>
+ 			   	<h3>Drekar</h3>
 				<p>Drekar is the CUAUV 2010-2011 vehicle, a joint competition and research vehicle. The design focuses on reducing the size and weight of the vehicle platform while maintaining full competition capabilities and control properties. The main improvements include stronger frame structures and pressure vessels, a streamlined electronics system, improved sensor suite, and improved vision algorithms.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2010">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2010.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2010</h4>
- 			   	<h5>Tachyon</h5>
+ 			   	<h3>Tachyon</h3>
 				<p>Tachyon is CUAUV’s 2009-2010 vehicle, designed using much of what we learned from our previous vehicles with many new innovations that improve vehicle performance. Tachyon was designed to be a joint competition and research vehicle, with an expanded payload area and better control characteristics.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2009">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2009.png" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2009</h4>
- 			   	<h5>Nova</h5>
+ 			   	<h3>Nova</h3>
 				<p>Nova is the next generation of CUAUV submarines. Expandable and capable of both close in maneuvering and long range sensing missions, it is a transition vehicle between competition missions and CUAUV's new research based open water focus.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2008">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2008.jpg" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2008</h4>
- 			   	<h5>Triton</h5>
+ 			   	<h3>Triton</h3>
 				<p>The Triton AUV is CUAUV's 2007-2008 littoral hovering AUV. The new vehicle borrows heavily from the successful elements of the Proteus AUV, as well as certain elements from the Seamonkey class vehicle. The main electronics are contained in a single clear acrylic hull. To improve maintainability the hull may be removed from the electronics rack without disconnecting any of the electronics. The endcaps are made out of aluminum for superior thermal performance.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2007">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2007.jpg" >
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2007</h4>
- 			   	<h5>Proteus</h5>
+ 			   	<h3>Proteus</h3>
 				<p>CUAUV’s 2007 competition vehicle is named Proteus. Proteus is the mythological son of the Greek god of the sea, Poseidon, also commonly referred to as the old man of the sea. He is famous for his ability to change shape – a perfect symbol for our new vehicle which has morphed from the SeaMonkey into a sleek and even more reliable new model. Proteus is a 40" long x 20" tall vehicle that will have the ability to autonomously complete tasks under water. The vehicle is smaller, lighter, faster, and more efficient than any of the team’s previous vehicles. The new design is able to balance functionality and performance. The two bottom pods are designed as battery hulls that can easily be removed from the vehicle, even while the vehicle is up and running. This new battery design will not interrupt onboard electronic operations, which will allow the team to remove one battery while the vehicle runs on the other.</p>
 			</div>
 		</div>
 		<div class="row sub-info" id="sub2006">
-			<div class="six columns">
+			<div class="five columns offset-by-one">
 				<img class="sub-pic" src="images/2006.jpg">
 			</div>
-			<div class="six columns">
+			<div class="five columns">
 				<h4>2006</h4>
- 			   	<h5>Seamonkey</h5>
+ 			   	<h3>Seamonkey</h3>
 				<p>Seamonkey was CUAUV's 5th generation vehicle. To date, it was the most versatile vehicle and well suited as a platform for developmental research and lake deployment. The central frame provides easy access for mounting sensors and any other payload. The larger top hull houses the vehicle electronics, while the bottom hull contains the vehicle's batteries and motor controllers. The combination of relatively high buoyancy on the top hull and greater weight on the bottom hull gives the vehicle an excellent static stability on the pitch and roll axes.</p>
 			</div>
 		</div>
