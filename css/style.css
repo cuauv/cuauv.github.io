@@ -224,4 +224,29 @@ ul, li {
   color: #fff;
 }
 
+.headShot{
+  width: 150px;
+  margin: 25px;
+
+}
+
+.name{
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.titleCenter{
+  text-align: center;
+
+}
+
+
+.img_div {
+  float: left;
+  text-align: center;
+
+ }
+
 /* END FOOTER STYLING */
