@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>CUAUV</title>
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129129329-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-129129329-1');
+  </script>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+  <script src="https://use.fontawesome.com/62036b53a1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="{{ " /assets/js/foundation.min.js " | relative_url }}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      var theta = ($(window).scrollTop() / 200) % (2 * Math.PI);
+      $('.site-logo-prop').css({
+        transform: 'rotate(' + theta + 'rad)'
+      });
+    });
+    $(document).ready(function() {
+      $(".previous-subs").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }
+        ]
+      })
+    });
+  </script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Script -->
+
+  <div class="navbar sticky">
+    <div class="container">
+      <div class="center-body row">
+        <!-- <div class="two columns">
+          <img src="images/newlogo_white.svg" alt="cuauv logo">
+        </div> -->
+        <div class="four columns">
+          <div class="site-logo">
+            <img class="site-logo-text" src="images/white_text_no_prop.svg" alt="CUAUV">
+            <img class="site-logo-prop" src="images/red_prop.svg">
+          </div>
+        </div>
+        <div class="eight columns right-align">
+          <ul>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="competition.html">Competition</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="intro">
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="six columns">
+            <h5>Cornell University</h5>
+            <h1>Autonomous Underwater Vehicle</h1>
+            <h5 class="intro-desc">CUAUV designs and builds autonomous underwater vehicles for competition and research. The team and its vehicle have received acclaim from industry professionals as a result of its performance and long-standing tradition of excellence.
+            </h5>
+          </div>
+          <div class="four offset-by-two columns">
+            <img class= "imageSmall" src="images/transparent-auv.png"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="card-light">
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="six offset-by-six columns">
+            <h2>2 New Submarines</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h6>
+            <a><h6>Link Somewhere</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="card-dark">
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="six columns">
+            <h2>7 Championships</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h6>
+            <a><h6>Link Somewhere</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="card-light">
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="six offset-by-six columns">
+            <h2>Diverse Team</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h6>
+            <a><h6>Link Somewhere</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="card-dark">
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="six columns">
+            <h2>Outreach Events</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h6>
+            <a><h6>Link Somewhere</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="end-card">
+    <div class="container">
+      <div class="main">
+        <div class="row">
+          <div class="eight offset-by-two columns">
+            <h2>Cornell University Autonomous Underwater Vehicle</h2>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h6>
+            <a><h6>Link Somewhere</h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="center-body row">
+        <div class="six columns" id="left-copyright">
+          ©1999-2018 Cornell University Autonomous Underwater Vehicle
+        </div>
+        <div class="six columns right-align" id="right-social">
+          <button class="social-media-links">
+                <a href="https://www.facebook.com/cornellauv" target="_blank">
+                    <i class="fa fa-facebook icons"></i>
+                </a>
+            </button>
+
+          <button class="social-media-links">
+                <a href="" target="_blank">
+                    <i class="fa fa-instagram icons"></i>
+                </a>
+            </button>
+
+          <button class="social-media-links">
+                <a href="" target="_blank">
+                    <i class="fa fa-youtube icons"></i>
+                </a>
+            </button>
+
+          <button class="social-media-links">
+                <a href="" target="_blank">
+                    <i class="fa fa-linkedin icons"></i>
+                </a>
+            </button>
+          <button class="social-media-links">
+                <a href="" target="_blank">
+                    <i class="fa fa-twitter icons"></i>
+                </a>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
