@@ -22,7 +22,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="js/siema.js"></script>
-
+	<script src="js/includes.js"></script>
 </head>
 <style>
 	.margin-less {
@@ -42,9 +42,6 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-	h4 {
-
-	}
 	.announcement {
 		background: #1c1c1c;
 		color: white;
@@ -58,6 +55,9 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-bottom: 24px;
+	}
+	.sub-info{
+		margin-bottom: 24px;
 	}
 	.content-half {
 		padding-top: 16px;
@@ -118,6 +118,7 @@
 	}
 </style>
 <body>
+	<div class="navbar sticky"></div>
 	<div class="container margin-less top">
 		<div class="row" style="text-align: center">
 			<h1>Our Vehicles</h1>
@@ -189,7 +190,7 @@
 				<h3>A Tradition of Excellence <strong><i>Our Past Subs</i></strong></h3>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" style="margin-bottom: 36px;">
 			<div class="one columns">
 				<button class="previous"> < </button>
 			</div>
@@ -515,5 +516,6 @@
 		$(".previous").click(() => { siema.prev(); });
 		$(".next").click(() => { siema.next(); });
 	</script>
+	<div class="footer"></div>
 </body>
 </html>
