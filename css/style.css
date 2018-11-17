@@ -35,6 +35,32 @@ body {
   .navbar a {
     display: none;
   }
+
+  /*Hamburger Menu Styling*/
+  .menu-mobile-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-bar {
+    background-color: white;
+    height: 4px;
+    width: 50px;
+    margin-bottom: 8px;
+  }
+
+  .third-bar {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 999px) {
+  .menu-mobile-button {
+    display: none;
+  }
 }
 
 h4, h5, h6 {
