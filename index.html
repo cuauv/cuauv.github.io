@@ -44,8 +44,10 @@
 
 <body>
   <!-- Script -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="js/includes.js"></script>
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/hamburger.js" type="text/javascript"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+	<!-- <script src="js/includes.js"></script>
 
   <script type="text/javascript" src="{{ " /assets/js/foundation.min.js " | relative_url }}"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
@@ -95,7 +97,7 @@
     });
   </script>
 
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 
   <!-- Script -->
 
@@ -123,7 +125,7 @@
         </div>
 
         <!--Hamburger Menu-->
-        <div class="one column menu-mobile-button">
+        <div id="hamburger-button" class="one column menu-mobile-button">
           <div>
             <div class="menu-bar"></div>
             <div class="menu-bar"></div>
@@ -132,6 +134,16 @@
         </div>
 
       </div>
+    </div>
+  </div>
+
+  <div id="ham-menu" class="hamburger-menu menu-hidden">
+    <div class="menu">
+      <a href="team.html">Team</a>
+      <a href="vehicles.html">Vehicle</a>
+      <a href="competition.html">Competition</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="join.html">Join</a>
     </div>
   </div>
 

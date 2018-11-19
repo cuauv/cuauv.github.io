@@ -67,6 +67,37 @@ h4, h5, h6, figCaption {
   font-family: 'Merriweather', serif;
 }
 
+/* OPEN HAMBURGER STYLING */
+.hamburger-menu {
+  position: fixed;
+  width: 100%;
+  top: 72px;
+  z-index: 1;
+}
+
+.menu {
+  background-color: red;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 150%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: gray;
+}
+
+.menu-hidden {
+  display: none;
+}
+
 /* INTRO */
 
 #intro .main {
