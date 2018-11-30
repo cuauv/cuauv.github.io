@@ -7,9 +7,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>CUAUV</title>
-
+  
+  <!-- Script -->
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/includes.js" type="text/javascript"></script>
   <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129129329-1"></script>
+  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129129329-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -18,7 +21,7 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-129129329-1');
-  </script>
+  </script>-->
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -43,102 +46,9 @@
 </head>
 
 <body>
-  <!-- Script -->
-  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-  <script src="js/hamburger.js" type="text/javascript"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
-	<script src="js/includes.js"></script>
+  <div class="navbar sticky"></div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-
-  <script type="text/javascript">
-    $(window).scroll(function() {
-      var theta = ($(window).scrollTop() / 200) % (2 * Math.PI);
-      $('.site-logo-prop').css({
-        transform: 'rotate(' + theta + 'rad)'
-      });
-    });
-    $(document).ready(function() {
-      $(".previous-subs").slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          }
-        ]
-      })
-    });
-  </script>
-
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <!-- Script -->
-
-  <div class="navbar sticky">
-    <div class="container">
-      <div class="center-body row">
-        <div class="four columns">
-          <div class="site-logo">
-            <img class="site-logo-text" src="images/white_text_no_prop.svg" alt="CUAUV">
-            <img class="site-logo-prop" src="images/red_prop.svg">
-          </div>
-        </div>
-
-        <div class="eight columns right-align regular-menu">
-          <ul>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="competition.html">Competition</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="join.html">Join</a></li>
-          </ul>
-        </div>
-
-        <!--Hamburger Menu-->
-        <div id="hamburger-button" class="one column menu-mobile-button">
-          <div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar third-bar"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="ham-menu" class="hamburger-menu menu-hidden">
-    <div class="menu">
-      <a href="team.html">Team</a>
-      <a href="vehicles.html">Vehicle</a>
-      <a href="competition.html">Competition</a>
-      <a href="sponsors.html">Sponsors</a>
-      <a href="join.html">Join</a>
-    </div>
-  </div>
+  <div id="ham-menu" class="hamburger-menu menu-hidden"></div>
 
   <div id="intro">
     <div class="container">
