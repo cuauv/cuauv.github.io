@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>CUAUV | Vehicles</title>
+
+	<!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Script -->
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/includes.js" type="text/javascript"></script>
+
+	<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/62036b53a1.js"></script>
+
+	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="../favicon.svg">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="js/siema.js"></script>
+	<script src="js/includes.js"></script>
+</head>
+<style>
+	input[type=text], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+
+	input[type=submit] {
+	  background-color: #000000;
+	  color: white;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  color: white;
+	  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 5px 10px 0 rgba(0,0,0,0.19);
+	}
+	.container {
+	  border-radius: 5px;
+	  background-color: #f2f2f2;
+	  padding: 20px;
+	}
+	.margin-less {
+		min-width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.top {
+		padding-top: 132px;
+		padding-bottom: 132px;
+		background:linear-gradient(
+			rgba(0, 0, 0, 0.625), 
+			rgba(0, 0, 0, 0.625)
+    	), url("images/sub.jpg");
+		color: white;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.announcement {
+		background: #1c1c1c;
+		color: white;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+	.sub-body {
+		padding-top: 24px;
+		background: url('images/castor-pollux-background.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 24px;
+	}
+	.sub-info{
+		margin-bottom: 24px;
+	}
+	.content-half {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	.card.sub{
+		margin-left: 12px;
+		margin-right: 12px;
+		padding: 6px;
+		height: 300px;
+		width: 75%;
+		border: #EBEBEB 2px solid;
+		background:white;
+	}
+	a h4, a h5, a p{
+		text-decoration: none;
+	}
+	.img-container{
+		height: 130px;
+		width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+	}
+	.img-container img{
+		width: 100%;
+	}
+	.tabs.previous-subs{
+		border: none;
+	}
+	.tabs-title.card{
+		text-align: center;
+	}
+	.tabs-title.card .card-divider{
+		text-align: center;
+	}
+	.tabs-title.card.sub h4,.tabs-title.card.sub p{
+		color: #1c1c1c;
+	}
+	.tabs-title.card.sub h5{
+		color: #1c1c1c;
+	}
+	.tabs-title.card.sub .winner h4{
+		color: red;
+	}
+	.slick-dots{
+		display: none;
+	}
+	.sub-pic {
+		width: 66%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	p {
+		font-family: 'Merriweather', serif;
+	}
+</style>
+<body>
+	<div class="navbar sticky"></div>
+  	<div id="ham-menu" class="hamburger-menu menu-hidden"></div>
+	
+	  <div class="container margin-less top">
+		<div class="row" style="text-align: center">
+			<h1>Contact Us!</h1>
+		</div>
+	</div>
+	</div>
+		<div class="container sub-body">
+		<div class="row">
+			<div class="twelve columns" style="text-align: left;">
+				<div class="container">
+				  <form action="/action_page.php">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="email">Email Address</label>
+					<input type="text" id="mail" name="email" placeholder="Your email...">
+
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="subject" placeholder="What is your question about?">
+					
+					<label for="question">Question</label>
+					<textarea id="text" name="question" placeholder="Write something" style="height:200px"></textarea>
+
+					<input type="submit" value="Submit">
+				  </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container sub-body">
+    </center>
+    </center>
+	</div>
+</body>
+</html>
