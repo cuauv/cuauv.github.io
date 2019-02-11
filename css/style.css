@@ -4,11 +4,15 @@ body {
 }
 
 @font-face {
-  font-family: 'alternate_gothic_no3_dregular';
+  font-family: 'alternate_gothic';
   src: url('../assets/font/alternate-gothic-no3-d-webfont.woff2') format('woff2'),
        url('../assets/font/alternate-gothic-no3-d-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: 'alternate_gothic', serif;
 }
 
 .center-body {
@@ -72,7 +76,7 @@ body {
 }
 
 h4, h5, h6, figCaption {
-  font-family: 'Merriweather', serif;
+  font-family: 'Helvetica', serif;
 }
 
 /* OPEN HAMBURGER STYLING */
@@ -108,40 +112,23 @@ h4, h5, h6, figCaption {
 
 /* INTRO */
 
-#intro .main {
-  padding-top: 16em;
-  padding-bottom: 8em;
-}
-
-#intro {
-  background-color: #1c1c1c;
-  color: white;
-}
-
-#intro h5 {
-  text-transform: uppercase;
-  font-family: 'Helvetica', 'HelveticaNeue', sans-serif;
-  font-weight: 200;
-  letter-spacing: .02em;
-  margin-bottom: 0.25em;
-}
-
-#intro .intro-desc {
-  font-family: 'Merriweather', serif;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 2em;
-}
-
-#intro h1 {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-
-#intro img {
-  margin: auto;
+.container.home {
+  /*height: calc(100vh - 24em);*/
+  height: 80vh;
+  padding-top: 12em;
+  /*margin-bottom: 6em;*/
   width: 100%;
+  text-align: center;
+}
+.home img{
+  margin: 0 auto;
+  width: 40%;
+}
+.home .row{
+  height: 30%;
+}
+.main-splash{
+  height: 60%;
 }
 
 /* INTRO END */
