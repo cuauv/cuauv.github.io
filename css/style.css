@@ -3,6 +3,14 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'alternate_gothic_no3_dregular';
+  src: url('../assets/font/alternate-gothic-no3-d-webfont.woff2') format('woff2'),
+       url('../assets/font/alternate-gothic-no3-d-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .center-body {
   display: flex;
   align-items: center;
