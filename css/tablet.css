@@ -1,0 +1,22 @@
+/*725 px */
+
+@media only screen and (max-width: 725px) {
+	.panel.three.columns{
+		width: 50%;
+		max-width: 50%;
+	  }
+	.home img{
+		min-width: 360px;
+	}
+	.main-splash{
+		height: 50%;
+		width: 100%;
+		padding-left: 2em;
+		padding-right: 2em;
+		display: table;
+		background-image: url("../images/splash.svg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
