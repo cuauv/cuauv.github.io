@@ -1,11 +1,9 @@
 $(document).ready(() => {
 	$.get("assets/navbar.html", (d) => {
 		$(".navbar.sticky").html(d);
-		console.log("loaded navbar");
 	});
 	$.get("assets/footer.html", (d) => {
 		$(".footer").html(d);
-		console.log("loaded footer");
 	});
 	$.get("assets/hamburger.html", (d) => {
 		$(".hamburger-menu").html(d);

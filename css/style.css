@@ -113,22 +113,91 @@ h4, h5, h6, figCaption {
 /* INTRO */
 
 .container.home {
-  /*height: calc(100vh - 24em);*/
-  height: 80vh;
-  padding-top: 12em;
-  /*margin-bottom: 6em;*/
+  height: calc(100vh - 72px);
+  margin-top: 72px;
   width: 100%;
+  max-width: 100%;
+  margin-left: 0; margin-right: 0;
   text-align: center;
 }
 .home img{
   margin: 0 auto;
+  margin-bottom: 1em;
   width: 40%;
 }
 .home .row{
-  height: 30%;
+  height: 33%;
 }
+
+.panel.three.columns{
+  text-decoration: none;
+  padding: 2em;
+  width: 25%;
+  max-width: 25%;
+  display: table;
+  height: 100%;
+  color: white;
+  margin: 0;
+}
+
+.panel span{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.panel#vehicles{
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+    ), url("../images/sub.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel#team{
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+    ), url("../images/team.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel#outreach{
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+    ), url("../images/girl-scouts.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel#sponsors{
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+    ), url("../images/man-with-sub.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-splash{
-  height: 60%;
+  height: 67%;
+  width: 100%;
+  display: table;
+  background-image: url("../images/splash.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-splash span{
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* INTRO END */
