@@ -118,6 +118,7 @@ h4, h5, h6, figCaption {
 
 .container.home {
   height: calc(100vh - 72px);
+  overflow: hidden;
   margin-top: 72px;
   width: 100%;
   max-width: 100%;
