@@ -92,7 +92,7 @@ h4, h5, h6, figCaption {
 }
 
 .menu {
-  background-color: red;
+  background-color: #B31B1B;
   text-align: center;
 }
 
@@ -130,8 +130,8 @@ h4, h5, h6, figCaption {
   margin-bottom: 1em;
   width: 33%;
 }
-.home .row{
-  height: 33%;
+.row.panels{
+  height: calc(40% - 54px);
 }
 
 .panel.three.columns{
@@ -164,6 +164,13 @@ h4, h5, h6, figCaption {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#announcements {
+  height: 54px;
+  background: #B31B1B;
+  color: white;
+  padding-top: 14px;
 }
 
 .panel#vehicles:hover{
@@ -237,7 +244,7 @@ h4, h5, h6, figCaption {
 }
 
 .main-splash{
-  height: 67%;
+  height: 60%;
   width: 100%;
   display: table;
   background-image: url("../images/splash.svg");
