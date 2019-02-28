@@ -461,5 +461,30 @@ ul, li {
     opacity: .7;
 }
 
-
 /* END FOOTER STYLING */
+
+/* VEHICLES PAGE */
+.margin-less {
+  min-width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.top {
+  margin-top: 72px;
+  background:linear-gradient(
+    rgba(255, 255, 255, 0.625), 
+    rgba(255, 255, 255, 0.625)
+    ), url("../images/vehicles_background2.png");
+  color: #1c1c1c;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sub-info{
+  margin-bottom: 24px;
+}
+a.sub-click{
+  text-decoration: none;
+}
+
+/* END VEHICLES PAGE */
