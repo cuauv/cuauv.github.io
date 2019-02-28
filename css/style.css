@@ -488,3 +488,58 @@ a.sub-click{
 }
 
 /* END VEHICLES PAGE */
+
+/* VEHICLES PAGE CARDS */
+
+.card.sub{
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 6px;
+  height: 300px;
+  width: 75%;
+  border: #EBEBEB 2px solid;
+  background:white;
+}
+a h4, a h5, a p{
+  text-decoration: none;
+}
+.img-container{
+  height: 130px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.img-container img{
+  width: 100%;
+}
+.tabs.previous-subs{
+  border: none;
+}
+.tabs-title.card{
+  text-align: center;
+}
+.tabs-title.card .card-divider{
+  text-align: center;
+}
+.tabs-title.card.sub h4,.tabs-title.card.sub p{
+  color: #1c1c1c;
+}
+.tabs-title.card.sub h5{
+  color: #1c1c1c;
+}
+.tabs-title.card.sub .winner h4{
+  color: red;
+}
+.slick-dots{
+  display: none;
+}
+.sub-pic {
+  width: 66%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ENG VEHICLES PAGE CARDS*/

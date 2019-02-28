@@ -28,79 +28,29 @@
 </head>
 <style>
 	
-	.content-half {
-		padding-top: 16px;
-		padding-bottom: 16px;
-	}
-	.card.sub{
-		margin-left: 12px;
-		margin-right: 12px;
-		padding: 6px;
-		height: 300px;
-		width: 75%;
-		border: #EBEBEB 2px solid;
-		background:white;
-	}
-	a h4, a h5, a p{
-		text-decoration: none;
-	}
-	.img-container{
-		height: 130px;
-		width: 80%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		overflow: hidden;
-	}
-	.img-container img{
-		width: 100%;
-	}
-	.tabs.previous-subs{
-		border: none;
-	}
-	.tabs-title.card{
-		text-align: center;
-	}
-	.tabs-title.card .card-divider{
-		text-align: center;
-	}
-	.tabs-title.card.sub h4,.tabs-title.card.sub p{
-		color: #1c1c1c;
-	}
-	.tabs-title.card.sub h5{
-		color: #1c1c1c;
-	}
-	.tabs-title.card.sub .winner h4{
-		color: red;
-	}
-	.slick-dots{
-		display: none;
-	}
-	.sub-pic {
-		width: 66%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
 </style>
 <body>
 	<div class="navbar sticky"></div>
   	<div id="ham-menu" class="hamburger-menu menu-hidden"></div>
 	
 	<div class="container margin-less top">
-		<div class="row">
-			<div class="twelve columns" style="text-align: center; margin-top: 48px">
-				<h5>Our 2019 Competition Subs</h5>
-				<h3>Heroes of the Illiad <strong><i>Odysseus & Ajax</i></strong></h3>
-				<div class="eight columns offset-by-two">
-					<img src="images/castor-pollux.png" style="width: 100%;"/>
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns" style="text-align: center; margin-top: 48px">
+					<h5>Our 2019 Competition Subs</h5>
+					<h3>Heroes of the Illiad <strong><i>Odysseus & Ajax</i></strong></h3>
+					<div class="eight columns offset-by-two">
+						<img src="images/castor-pollux.png" style="width: 100%;"/>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="eight columns offset-by-two">
-				<p>CUAUV pioneered the AUVSI competition in 2016 by building not one but two subs, Thor and Loki. We continue this proud tradition with our brand new vehicles Odysseus and Ajax. Odysseus and Ajax were </p>
+
+		<div class="container">
+			<div class="row">
+				<div class="eight columns offset-by-two">
+					<p>CUAUV pioneered the AUVSI competition in 2016 by building not one but two subs, Thor and Loki. We continue this proud tradition with our brand new vehicles Odysseus and Ajax. Odysseus and Ajax will debut at AUSI's RoboSub 2019 Competition in San Diego, CA this summer. </p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -117,6 +67,19 @@
 			</div>
 			<div class="ten columns" style="text-align: center;">
 				<ul class="siema">
+						<div class="tabs-title card sub">
+							<a class="sub-click" onclick="showInfo(17)" href="#prevSubs">
+								<div class="card-divider">
+									<h4><strong>2018</strong></h4>
+								</div>
+								<div class="img-container">
+									<img src="images/2017.png">
+								</div>
+								<div class="card-section">
+									<h5>Castor & Pollux</h5>
+								</div>
+							</a>
+						</div>
 					<div class="tabs-title card sub">
 						<a class="sub-click" onclick="showInfo(17)" href="#prevSubs">
 							<div class="card-divider">
@@ -179,7 +142,7 @@
 								<img src="images/2013.png">
 							</div>
 							<div class="card-section">
-								<h5>Ragnorok</h5>
+								<h5>Ragnorök</h5>
 								<p><i>Robosub Champion</i></p>
 							</div>
 						</a>
