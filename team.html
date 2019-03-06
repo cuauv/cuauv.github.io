@@ -92,6 +92,49 @@
     .image-section-left {
       padding-left: 7em;
     }
+    .subteam{
+      padding: 2em;
+    }
+    .subteam .columns{
+      background-color: rgba(245, 245, 245, 0.85);
+      padding: 1em;
+    }
+    #software{
+      background: linear-gradient(
+			rgba(100, 100, 100, 0), 
+			rgba(50, 50, 50, 0)
+    	), url("images/software.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #mechanical{
+      background: linear-gradient(
+			rgba(100, 100, 100, 0), 
+			rgba(50, 50, 50, 0)
+    	), url("images/mechanical.JPG");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #electrical{
+      background: linear-gradient(
+			rgba(100, 100, 100, 0), 
+			rgba(50, 50, 50, 0)
+    	), url("images/electrical.JPG");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #business{
+      background: linear-gradient(
+			rgba(52, 52, 52, 0), 
+			rgba(50, 50, 50, 0)
+    	), url("images/business.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 </style>
 
 <body>
@@ -107,40 +150,66 @@
   </div>
   <div class="container">
     <div class="row page-section">
-      <div class="six columns">
+      <div class="seven columns">
+        <h2>Overview</h2>
+        <p>CUAUV designs, builds, programs and tests a completely new autonomous submarine every year to compete in AUVSI’s international RoboSub competition. In August, we ship our sub down to San Diego, drop it in a recomissioned Navy testing pool, press the green button, and cheer it on as it navigates a complicated underwater obstacle course with no human intervention whatsoever: ramming buoys, dropping weighted darts on Space Invader-shaped objects, firing torpedoes through differently colored targets, re-positioning PVC structures and more.</p>
+        <p>CUAUV is entirely undergraduate-run, consisting of over 40 students spanning numerous academic disciplines. The team offers a holistic engineering experience developing cutting-edge technology; students control the entire design, manufacturing, testing and revision cycle. As a six-time RoboSub champion, CUAUV embodies a tradition of excellence and continuously pushes the envelope of autonomous underwater vehicle technology.</p>
+      </div>
+      <div class="five columns">
+        <h2>At a Glance</h2>
+        <div class="row at-a-glance">
+          <div class="four columns">
+            <h2>1999</h2>
+            <p>Founded</p>
+          </div>
+          <div class="four columns">
+              <h2>48</h2>
+              <p>Team Members</p>
+          </div>
+          <div class="four columns">
+              <h2>8</h2>
+              <p>Majors</p>
+          </div>
+        </div>
+        <div class="row at-a-glance">
+          <div class="four columns">
+            <h2>7</h2>
+            <p>AUVSI Championships</p>
+          </div>
+          <div class="four columns">
+              <h2>4</h2>
+              <p>Subteams</p>
+          </div>
+          <div class="four columns">
+              <h2>2</h2>
+              <p>Vehicles in Development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row page-section subteam" id="software">
+      <div class="five columns">
           <h2>Software</h2>
           <p>The software subteam writes all of the code that executes on the submarine's main computer and any additional infrastructure and tooling. They develop all software for vehicle control and computer vision, and constantly improves each year. They also build auxiliary software such as simulation, visualization, and automation tools that enable us to efficiently develop mission systems that accomplish the requisite task. Finally, the software team releases all of their in-house software stack for anyone, including other teams, to learn from and use on their own AUVs. Parts or all of the software stack is currently used on many vehicles both in and out of the competition
           </p>
       </div>
-      <div class="six columns">
-          <img style="width: 100%;" src="images/software.jpg" alt="software" />
-      </div>
     </div>
-    <div class="row page-section">
-      <div class="six columns">
+    <div class="row page-section subteam" id="mechanical">
+      <div class="five columns offset-by-seven">
         <h2>Mechanical</h2>
         <p>The mechanical subteam uses Solidworks to design the custom enclosures, racks, and structures on the vehicles. Throughout the design process, rigorous finite element analysis is run on each assembly to ensure every part will perform successfully under high loads. Every component is manufactured in house with mills, lathes, and CNC machines to a tolerance of 0.005 inches. Mechanical members then integrate and test all assemblies up to fifty feet underwater. </p>
       </div>
-      <div class="six columns">
-        <img style="width: 100%;" src="images/mechanical.JPG" alt="mechanical" />
-      </div>
     </div>
-    <div class="row page-section">
-      <div class="six columns">
+    <div class="row page-section subteam" id="electrical">
+      <div class="five columns">
           <h2>Electrical</h2>
           <p>The electrical subteam works to connect the software running on the main computer with the rest of the submarine, ensuring efficiency with the vehicle’s power, sensor, and mechatronics systems. Team members design, layout, and populate custom printed circuit boards (PCBs), which all connect via an integrated backplane. New improvements have allowed the entire backbone of the submarines to be modular and nearly identical across both vehicles, improving the functionality and reliability of both machines. Battery management boards allow for reliable monitoring and protection against power spikes.</p>
         </div>
-        <div class="six columns">
-          <img style="width: 100%;" src="images/electrical.JPG" alt="electrical" />
-        </div>
     </div>
-    <div class="row page-section">
-      <div class="six columns">
+    <div class="row page-section subteam" id="business">
+      <div class="five columns offset-by-seven">
           <h2>Business</h2>
           <p>The business sub team connects the technical work that the rest of the team does with the outside world. This includes sponsors, which are companies and individuals who sponsor us to help the team get the materials it needs to build the best AUVs possible. We also work to create outreach events to give back to the Cornell and Ithaca communities. Finally, we work on design for everything from apparel to a sponsorship packet to website design.</p>
-        </div>
-        <div class="six columns">
-          <img style="width: 100%;" src="images/business.jpg" alt="business" />
         </div>
       </div>
   </div>
