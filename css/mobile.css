@@ -6,6 +6,8 @@
 	}
 	#announcements {
 		height: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 	.panel.three.columns{
 		height: 100%;

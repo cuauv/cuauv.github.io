@@ -131,7 +131,7 @@ h4, h5, h6, figCaption {
   width: 33%;
 }
 .row.panels{
-  height: calc(40% - 54px);
+  height: 33%;
 }
 
 .panel.three.columns{
@@ -167,10 +167,14 @@ h4, h5, h6, figCaption {
 }
 
 #announcements {
-  height: 54px;
+  /*height: 54px;*/
   background: #B31B1B;
   color: white;
-  padding-top: 14px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#announcements p{
+  margin-bottom: 0px;
 }
 
 .panel#vehicles:hover{
