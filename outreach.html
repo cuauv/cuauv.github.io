@@ -67,7 +67,9 @@
     .page-section {
         padding-top: 1em;
         padding-bottom: 1em;
-        height: 20em;
+        height: 100%;
+        display: block;
+    overflow: auto;
     }
     .text-section-right {
         padding-top: 6em;
@@ -92,6 +94,13 @@
     }
     .image-section-left {
       padding-left: 7em;
+    }
+    @media (max-width: 893px) {
+      .page-section .six.columns{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
     }
 </style>
 
@@ -144,7 +153,7 @@
                 <div class="six columns">
                   <img style="width: 100%;" src="images/rawexpo.JPG" alt="business" />
                 </div>
-              </div>
+            </div>
           </div>
   <div class="footer"></div>
 </body>
