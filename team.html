@@ -29,7 +29,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
   <script src="https://use.fontawesome.com/62036b53a1.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -107,6 +106,9 @@
     .at-a-glance h2{
       margin-bottom: 0px;
     }
+    .at-a-glance{
+      text-align: center;
+    }
     #software{
       background: linear-gradient(
 			rgba(100, 100, 100, 0), 
@@ -142,6 +144,19 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    @media (max-width: 893px) {
+      .page-section.subteam .five.columns{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+    @media (max-width: 549px) {
+      .at-a-glance .four.columns{
+        text-align: center;
+        width: 33%;
+      }
     }
 </style>
 
