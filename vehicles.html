@@ -18,6 +18,7 @@
 	<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
 
 	<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="../favicon.svg">
@@ -61,11 +62,20 @@
 				<h3>A Tradition of Excellence <strong><i>Our Past Subs</i></strong></h3>
 			</div>
 		</div>
-		<div class="row" style="margin-bottom: 36px;">
-			<div class="one columns">
+		<div class="row">
+			<div class="two columns slider_button offset-by-five">
+				<button class="previous"> < </button>
+				<button class="next"> > </button>
+			</div>
+			<!--<div class="one columns slider_button">
 				<button class="previous"> < </button>
 			</div>
-			<div class="ten columns" style="text-align: center;">
+			<div class="one columns offset-by-ten slider_button">
+				<button class="next"> > </button>
+			</div>-->
+		</div>
+		<div class="row" style="margin-bottom: 36px;">
+			<div class="ten columns offset-by-one" style="text-align: center;">
 				<ul class="siema">
 						<div class="tabs-title card sub">
 							<a class="sub-click" onclick="showInfo(17)" href="#prevSubs">
@@ -244,9 +254,6 @@
 					</div>
 				</ul>
 			</div>
-			<div class="one columns">
-				<button class="next"> > </button>
-			</div>
 		</div>
 		<div class="row sub-info" id="sub2017">
 			<div class="five columns offset-by-one">
@@ -394,7 +401,7 @@
 			draggable: true,
 			multipleDrag: true,
 			threshold: 20,
-			loop: true,
+			loop: false,
 			rtl: false,
 			onInit: () => {},
 			onChange: () => {},
